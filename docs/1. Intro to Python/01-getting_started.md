@@ -245,6 +245,6 @@ By running this script, you should see the output: "Hi, PyCharm" in the console[
 ---------------
 
 ??? info "Use of AI"
-Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
-author.
+      Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+      explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
+      author.

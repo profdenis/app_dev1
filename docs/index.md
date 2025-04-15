@@ -117,7 +117,7 @@ while building on existing programming knowledge.
 ---------------
 
 ??? info "Use of AI"
-        Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-        explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
-        author.
+    Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+    explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
+    author.
 
