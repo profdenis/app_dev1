@@ -23,10 +23,7 @@ For students with prior Java OOP experience and web development knowledge, here 
 
 #### Comprehensive Courses
 
--
-    *
-*[From Java to Python OOP: Bridge the Gap for Java Developers]((https://www.linkedin.com/learning/from-java-to-python-oop-bridge-the-gap-for-java-developers))
-** - LinkedIn Learning course by Deepa Muralidhar
+- **[From Java to Python OOP: Bridge the Gap for Java Developers]((https://www.linkedin.com/learning/from-java-to-python-oop-bridge-the-gap-for-java-developers))** - LinkedIn Learning course by Deepa Muralidhar
 specifically designed for Java developers transitioning to Python OOP (1h7m)[1]
 
 - **[Python Crash Course for Java Developers](https://github.com/blu3r4y/python-for-java-developers)** - GitHub
