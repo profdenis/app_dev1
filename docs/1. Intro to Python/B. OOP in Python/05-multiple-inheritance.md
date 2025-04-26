@@ -189,10 +189,236 @@ lead to elegant, modular code. When overused, it can create maintenance challeng
      - [37] https://data-flair.training/blogs/python-multiple-inheritance/
      - [38] https://openstax.org/books/introduction-python-programming/pages/13-5-multiple-inheritance-and-mixin-classes
 
+## How `super()` Works with Multiple Inheritance in Python
+
+When a Python class inherits from two or more classes, the behavior of `super()` is determined by the **method
+resolution order (MRO)**, as discussed above.
+
+### Which Class Does `super()` Refer To?
+
+In a class that inherits from multiple parent classes, `super()` refers to the **next class in the MRO**, not
+necessarily the first parent listed in the class definition. For example:
+
+```python
+class A:
+    def __init__(self):
+        print("A initialized")
+
+
+class B:
+    def __init__(self):
+        print("B initialized")
+
+
+class C(A, B):
+    def __init__(self):
+        super().__init__()
+        print("Child initialized")
+
+
+child = C()
+```
+
+**Output:**
+
+```
+A initialized
+C initialized
+```
+
+Here, `super().__init__()` in `Child` calls `A.__init__()` because `A` is the next class in the MRO after
+`C`[5][6]. The MRO for `C` is `[C, A, B, object]`.
+
+### How to Refer to the Other Parent Class?
+
+If you want to explicitly call a method from a specific parent class (not just the next in the MRO), you can do so by
+directly referencing the class:
+
+```python
+class C(A, B):
+    def __init__(self):
+        super().__init__()  # Calls A.__init__()
+        B.__init__(self)  # Explicitly calls B.__init__()
+        print("C initialized")
+```
+
+This way, both parent initializers are called, but be cautious-if both parent classes call `super()`, you may end up
+calling the same method multiple times, depending on the MRO and class design[1][5].
+
+### Advanced Use: Customizing `super()`
+
+You can also customize where `super()` starts its search by passing arguments:
+
+```python
+super(B, self).__init__()
+```
+
+This tells Python to start looking for the method after `Parent2` in the MRO of `self`[7]. This is rarely needed in
+typical class designs, but it can be useful in advanced multiple inheritance scenarios.
+
+### Summary Table
+
+| Scenario                       | What `super()` Calls            | How to Call the Other Parent      |
+|--------------------------------|---------------------------------|-----------------------------------|
+| Multiple inheritance `C(A, B)` | Next class in MRO after current | Explicitly: `B.method(self, ...)` |
+| Customizing `super()`          | After specified class in MRO    | Use `super(C, self).method()`     |
+
+### Key Points
+
+- `super()` always refers to the next class in the MRO, not necessarily the first parent in the class definition[6][5].
+- To call a specific parent class's method, use the parent class name directly.
+- Be careful with multiple inheritance and `super()` to avoid duplicate calls or missed initializations.
+
+For most cases, stick to using `super()` consistently and design your classes to cooperate with it, especially when
+building frameworks or mixins[6][7].
+
+??? note "References"
+- [1] https://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance
+- [2] https://docs.vultr.com/python/built-in/super
+- [3] https://www.datacamp.com/tutorial/super-multiple-inheritance-diamond-problem
+- [4] https://www.digitalocean.com/community/tutorials/python-super
+- [5] https://www.geeksforgeeks.org/python-multiple-inheritance-with-super-function/
+- [6] https://realpython.com/lessons/multiple-inheritance-python/
+- [7] https://realpython.com/python-super/
+- [8] https://www.programiz.com/python-programming/multiple-inheritance
+- [9] https://www.geeksforgeeks.org/multiple-inheritance-in-python/
+- [10] https://www.sololearn.com/en/Discuss/1934244/super-with-multiple-inheritance
+- [11] https://www.reddit.com/r/learnpython/comments/z9e00j/what_is_the_point_of_the_super_function_in_python/
+- [12] https://aviadr1.github.io/learn-advanced-python/06_multiple_inheritance_and_super/multiple_inheritance_and_super.html
+- [13] https://stackoverflow.com/questions/14206015/pythons-multiple-inheritance-picking-which-super-to-call
+- [14] https://www.youtube.com/watch?v=PA3Lnkqz1Ww
+- [15] https://blog.hubspot.com/website/python-super
+- [16] https://www.w3schools.com/python/python_inheritance.asp
+- [17] https://discuss.python.org/t/make-super-work-in-a-class-definition/48845
+- [18] https://www.reddit.com/r/learnpython/comments/ndyce5/a_question_about_super_and_multiple_inheritance/
+
+## Example with the diamond problem
+
+```python
+class Alpha:
+    def __init__(self):
+        print("Alpha initialized")
+
+
+class A(Alpha):
+    def __init__(self):
+        super().__init__()
+        print("A initialized")
+
+
+class B(Alpha):
+    def __init__(self):
+        super().__init__()
+        print("B initialized")
+
+
+class C(A, B):
+    def __init__(self):
+        super().__init__()  # Calls A.__init__()
+        B.__init__(self)  # Explicitly calls B.__init__()
+        print("C initialized")
+
+
+child = C()
+print(C.__mro__)
+```
+
+### Output
+
+```text
+Alpha initialized
+B initialized
+A initialized
+Alpha initialized
+B initialized
+C initialized
+(<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.Alpha'>, <class 'object'>)
+```
+
+**Why do we get multiple calls to the exact same `__init__` methods ?**
+
+Let's break down why this happens step-by-step:
+
+### Key Explanation
+
+The output occurs because of two factors:
+
+1. **Method Resolution Order (MRO)** in multiple inheritance
+2. **Explicit call to `B.__init__`** in class `C`
+
+Here's how the code executes:
+
+---
+
+### Execution Flow
+
+1. **`C()` is created** → Calls `C.__init__`
+2. **`super().__init__()` in `C`** → Follows MRO to call `A.__init__`
+3. **`A.__init__` runs**:
+    - `super().__init__()` → Next in MRO is `B` (not `Alpha`!), so `B.__init__` runs
+    - `B.__init__` → `super().__init__()` calls `Alpha.__init__` (prints "Alpha initialized")
+    - `B.__init__` completes (prints "B initialized")
+    - Back to `A.__init__` (prints "A initialized")
+4. **Explicit `B.__init__(self)` in `C`** → Directly calls `B.__init__` again:
+    - `super().__init__()` → Calls `Alpha.__init__` again (prints "Alpha initialized")
+    - `B.__init__` completes again (prints "B initialized")
+5. **`C.__init__` finishes** (prints "C initialized")
+
+---
+
+### Why MRO Matters
+
+The MRO for `C` is **`C → A → B → Alpha → object`** (visible in the output). This means:
+
+- When `super()` is called in `A`, it looks for the next class in the MRO chain (`B`), **not** `A`'s direct parent (
+  `Alpha`).
+
+---
+
+### Why "Alpha" Appears Twice?
+
+1. First "Alpha" comes from the `A → B → Alpha` chain via `super()` in `C`
+2. Second "Alpha" comes from the explicit `B.__init__` call in `C`, which triggers `B → Alpha` again
+
+---
+
+### How to Fix This (If Needed)
+
+If you want to avoid duplicate initializations:
+
+```python
+class C(A, B):
+    def __init__(self):
+        # Let MRO handle all parent initializations
+        super().__init__()  # Follows C→A→B→Alpha chain
+        print("C initialized")
+```
+
+**Output with this fix**:
+
+```
+Alpha initialized
+B initialized
+A initialized
+C initialized
+(<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.Alpha'>, <class 'object'>) 
+```
+
+---
+
+### Key Takeaways
+
+1. **MRO determines `super()` behavior**, not just parent classes
+2. **Explicit parent calls** (`B.__init__`) bypass MRO and can cause duplicates
+3. **Consistent `super()` usage** is safer in complex inheritance
+
+Don't forget to run `print(C.__mro__)` to see the exact method resolution order.
+
+
 
 ---------------
 
 ??? info "Use of AI"
-        Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-        explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
-        author.
+      Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+      explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
+      author.
