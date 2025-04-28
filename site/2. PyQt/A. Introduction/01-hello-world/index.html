@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/01-hello-world/">
       
       
-        <link rel="prev" href="../../01-getting-started/">
+        <link rel="prev" href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/">
       
       
-        <link rel="next" href="../../B.%20Signals/01-button-click/">
+        <link rel="next" href="../02-layouts/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>1. Hello World! - Application Development 1</title>
+        <title>1. Creating Your First GUI Application - Application Development 1</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-hello-world" class="md-skip">
+        <a href="#1-creating-your-first-gui-application" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Hello World!
+              1. Creating Your First GUI Application
             
           </span>
         </div>
@@ -267,14 +267,25 @@
   
     
     
+      
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../01-getting-started/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   2. PyQt
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -848,27 +859,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../01-getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1. Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -889,10 +879,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -903,8 +893,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             A. Introduction
           </label>
@@ -926,16 +916,348 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Creating Your First GUI Application
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    1. Hello World!
+    1. Creating Your First GUI Application
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-pyqt6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PyQt6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing PyQt6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pyqt6-through-pycharm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PyQt6 through PyCharm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-pyqt6-application-hello-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First PyQt6 Application: Hello World
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-structure-and-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Structure and Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating the Application
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-the-main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining the Main Window
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-layouts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Layouts Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-widgets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Widgets Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-box-layouts-examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Box Layouts Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-grid-layout-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Grid Layout Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Form Layout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    B. Signals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            B. Signals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/01-button-click/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Introduction to Event Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/02-slider-dial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Example with a slider and a dial
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -980,7 +1302,7 @@
             
   
   <span class="md-ellipsis">
-    B. Signals
+    C. Architecture
   </span>
   
 
@@ -989,80 +1311,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            B. Signals
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../B.%20Signals/01-button-click/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1. Button Click
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    C. Architecture
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             C. Architecture
           </label>
@@ -1121,10 +1369,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1135,8 +1383,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             D. Background Tasks
           </label>
@@ -1531,6 +1779,116 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-pyqt6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PyQt6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing PyQt6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pyqt6-through-pycharm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PyQt6 through PyCharm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-pyqt6-application-hello-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First PyQt6 Application: Hello World
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-structure-and-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Structure and Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating the Application
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-the-main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining the Main Window
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1547,7 +1905,213 @@
   
 
 
-<h1 id="1-hello-world">1. Hello World!<a class="headerlink" href="#1-hello-world" title="Permanent link">&para;</a></h1>
+<h1 id="1-creating-your-first-gui-application">1. Creating Your First GUI Application<a class="headerlink" href="#1-creating-your-first-gui-application" title="Permanent link">&para;</a></h1>
+<p><strong>PyQt6</strong> is a powerful toolkit for developing cross-platform graphical user interface (GUI) applications using 
+Python. It
+provides Python bindings for the Qt framework, allowing developers to create professional-looking desktop applications
+that run on Windows, macOS, and Linux platforms. This guide will introduce you to PyQt6 with a simple <em>Hello World</em>
+application and cover installation procedures.</p>
+<h2 id="installing-pyqt6">Installing PyQt6<a class="headerlink" href="#installing-pyqt6" title="Permanent link">&para;</a></h2>
+<p>PyQt6 can be installed either through the command line using <code>pip</code> or through the PyCharm IDE interface. Here are
+instructions for both methods:</p>
+<h3 id="command-line-installation">Command Line Installation<a class="headerlink" href="#command-line-installation" title="Permanent link">&para;</a></h3>
+<p>Installing PyQt6 is straightforward using <code>pip</code>, Python&rsquo;s package installer. Open your command prompt or terminal 
+and run the following command:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install PyQt6
+</span></code></pre></div>
+<p>For Mac users, you might need to use <code>pip3</code> instead:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip3 install PyQt6
+</span></code></pre></div>
+<p>You can verify the installation by checking the version:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pyuic6 --version
+</span></code></pre></div>
+<p>If the command displays version information, PyQt6 is successfully installed[5].</p>
+<h3 id="installing-pyqt6-through-pycharm">Installing PyQt6 through PyCharm<a class="headerlink" href="#installing-pyqt6-through-pycharm" title="Permanent link">&para;</a></h3>
+<p>If you&rsquo;re using PyCharm IDE, you can install PyQt6 through its built-in package manager:</p>
+<ol type="1">
+<li>Open your Python project in PyCharm</li>
+<li>Go to <code>File &gt; New Project Setup &gt; Settings</code> (or <code>File &gt; Settings</code> for existing projects)</li>
+<li>Navigate to <code>Python Interpreter</code> section</li>
+<li>Select the appropriate Python interpreter for your project</li>
+<li>Click the <code>+</code> icon to add a new package</li>
+<li>Search for <code>PyQt6</code> in the search box</li>
+<li>Select <code>PyQt6</code> and click <code>Install Package</code></li>
+<li>Once completed, you&rsquo;ll see a success message: <code>Package PyQt6 installed successfully</code>[3]</li>
+</ol>
+<p>Alternatively, you can use the <em>Python Packages</em> tool window to install PyQt6. Here’s how you can do it:</p>
+<ol type="1">
+<li>
+<p><strong>Open PyCharm and Your Project</strong><br />
+   Launch PyCharm and open the project where you want to install PyQt6.</p>
+</li>
+<li>
+<p><strong>Locate the Python Packages Tool Window</strong>  </p>
+</li>
+</ol>
+<ul>
+<li>Look at the bottom or side panel of the PyCharm interface for the <strong>Python Packages</strong> tool window.  </li>
+<li>If you don’t see it, you can open it from the sidebar or via <code>View &gt; Tool Windows &gt; Python Packages</code>[3][5].</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Search for PyQt6</strong>  </li>
+</ol>
+<ul>
+<li>In the search bar at the top of the Python Packages window, type <code>PyQt6</code>[3][5].</li>
+<li>PyCharm will show you the PyQt6 package (and possibly related packages).</li>
+</ul>
+<ol start="4" type="1">
+<li><strong>Install PyQt6</strong>  </li>
+</ol>
+<ul>
+<li>Click on <code>PyQt6</code> in the search results.</li>
+<li>You’ll see an <strong>Install</strong> button next to the package name. Click it to start the installation[3][5].</li>
+<li>Optionally, you can select a specific version before installing[2][5].</li>
+</ul>
+<ol start="5" type="1">
+<li><strong>Verify Installation</strong>  </li>
+</ol>
+<ul>
+<li>After installation, <code>PyQt6</code> should appear in your list of installed packages in the same window[3].</li>
+<li>You can now import and use PyQt6 in your project.</li>
+</ul>
+<p><strong>Tip:</strong>  </p>
+<ul>
+<li>The Python Packages tool window also allows you to view package documentation, upgrade, or uninstall packages 
+  easily[3][4][5].</li>
+<li>Always make sure you have the correct Python interpreter selected for your project to avoid installation issues[1][2].</li>
+</ul>
+<h2 id="your-first-pyqt6-application-hello-world">Your First PyQt6 Application: Hello World<a class="headerlink" href="#your-first-pyqt6-application-hello-world" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s create a simple PyQt6 application that displays a &ldquo;Hello World&rdquo; message in a centered label. This basic example
+will introduce you to the fundamental concepts of PyQt6 programming.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QLabel</span><span class="p">,</span> <span class="n">QVBoxLayout</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Qt</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="c1"># Set window properties</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;PyQt6 Hello World&quot;</span><span class="p">)</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>  <span class="c1"># x, y, width, height</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="c1"># Create a label with text</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="n">label</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="c1"># Set font size for better visibility</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="n">font</span> <span class="o">=</span> <span class="n">label</span><span class="o">.</span><span class="n">font</span><span class="p">()</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        <span class="n">font</span><span class="o">.</span><span class="n">setPointSize</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">label</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="n">font</span><span class="p">)</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>        <span class="c1"># Create layout and add label</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>        <span class="n">layout</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="c1"># Center the label in the layout</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>        <span class="n">label</span><span class="o">.</span><span class="n">setAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignmentFlag</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>        <span class="c1"># Apply layout to the window</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>    <span class="c1"># Create the application</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    <span class="c1"># Create and show the main window</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>    <span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>    <span class="c1"># Start the event loop</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div>
+<p><img alt="hello.png" src="../hello.png" /></p>
+<h2 id="understanding-the-code">Understanding the Code<a class="headerlink" href="#understanding-the-code" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s break down the Hello World example to understand how PyQt6 works:</p>
+<h3 id="basic-structure-and-imports">Basic Structure and Imports<a class="headerlink" href="#basic-structure-and-imports" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QLabel</span><span class="p">,</span> <span class="n">QVBoxLayout</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Qt</span>
+</span></code></pre></div>
+<p>These lines import the necessary modules from PyQt6:</p>
+<ul>
+<li><code>QApplication</code>: The foundation for any PyQt application</li>
+<li><code>QWidget</code>: The base class for all UI objects</li>
+<li><code>QLabel</code>: Widget for displaying text</li>
+<li><code>QVBoxLayout</code>: Vertical layout manager</li>
+<li><code>Qt</code>: Contains various constants and enumerations[4][8]</li>
+</ul>
+<h3 id="creating-the-application">Creating the Application<a class="headerlink" href="#creating-the-application" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span></code></pre></div>
+<p>This creates a QApplication instance. Every PyQt application must have exactly one QApplication object, which manages
+the application&rsquo;s control flow and main settings. The <code>sys.argv</code> parameter allows the application to accept command-line
+arguments, though it&rsquo;s not necessary for simple applications[4].</p>
+<h3 id="defining-the-main-window">Defining the Main Window<a class="headerlink" href="#defining-the-main-window" title="Permanent link">&para;</a></h3>
+<p>We create a custom class <code>MainWindow</code> that inherits from <code>QWidget</code>. In the constructor:</p>
+<ol type="1">
+<li>We set the window title and dimensions with <code>setWindowTitle()</code> and <code>setGeometry()</code></li>
+<li>We create a <code>QLabel</code> widget with the text &ldquo;Hello World!&rdquo;</li>
+<li>We increase the font size for better visibility</li>
+<li>We create a vertical layout (<code>QVBoxLayout</code>) and add our label to it</li>
+<li>We center the label using <code>setAlignment()</code></li>
+<li>We apply the layout to our window with <code>setLayout()</code>[8]</li>
+</ol>
+<h3 id="starting-the-application">Starting the Application<a class="headerlink" href="#starting-the-application" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div>
+<p>These lines create an instance of our MainWindow, display it on screen with <code>show()</code>, and start the application&rsquo;s event
+loop with <code>app.exec()</code>. The event loop is responsible for processing user interactions and updating the UI[4].</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>This introduction has covered the basics of PyQt6: installation, creating a simple window, and adding a centered label.
+The &ldquo;Hello World&rdquo; example demonstrates the fundamental structure of a PyQt6 application, including:</p>
+<ol type="1">
+<li>Creating an application object</li>
+<li>Setting up a window</li>
+<li>Adding widgets (in this case, a label)</li>
+<li>Arranging widgets using layouts</li>
+<li>Running the application&rsquo;s event loop</li>
+</ol>
+<p>As you continue learning PyQt6, you&rsquo;ll discover many more widgets and features that allow you to create sophisticated
+desktop applications. You can build on this foundation to add buttons, input fields, menus, dialogs, and much more.</p>
+<p>For beginners just starting with GUI programming, PyQt6 offers a good balance between ease of use and powerful features,
+making it an excellent choice for Python developers looking to create desktop applications.</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://wiki.qt.io/Qt_for_Python_Tutorial_HelloWorld</li>
+<li>[2] https://discuss.python.org/t/pyqt6-module-not-found/67372</li>
+<li>[3] https://www.youtube.com/watch?v=JXRWwYzeDLc</li>
+<li>[4] https://doc.qt.io/qtforpython-6/tutorials/basictutorial/widgets.html</li>
+<li>[5] https://abhinavtej.hashnode.dev/installing-pyqt6-and-pyside6-on-windows-and-mac</li>
+<li>[6] https://pythonpyqt.com/how-to-install-pyqt5-in-pycharm/</li>
+<li>[7] https://pythonbasics.org/pyqt-hello-world/</li>
+<li>[8] https://www.pythontutorial.net/pyqt/pyqt-qlabel/</li>
+<li>[9] https://www.pythonguis.com/tutorials/pyqt6-creating-your-first-window/</li>
+<li>[10] https://python-qt-tutorial.readthedocs.io/en/latest/1.hello.html</li>
+<li>[11] https://www.youtube.com/watch?v=FoD7MOm4KY4</li>
+<li>[12] https://www.youtube.com/watch?v=NU3DQwMKz00</li>
+<li>[13] https://stackoverflow.com/questions/71491747/pycharm-support-for-pyqt6-on-m1</li>
+<li>[14] https://www.tutorialspoint.com/pyqt/pyqt_qlabel_widget.htm</li>
+<li>[15] https://www.pythonguis.com/installation/install-pyqt6-mac/</li>
+<li>[16] https://discuss.python.org/t/solved-module-pyqt6-not-found/33554</li>
+<li>[17] https://www.pythonguis.com/tutorials/pyqt6-widgets/</li>
+<li>[18] https://pypi.org/project/PyQt6/</li>
+<li>[19] https://youtrack.jetbrains.com/issue/PY-51291/PyQt6-support</li>
+<li>[20] https://stackoverflow.com/questions/21538615/hello-world-in-pyqt</li>
+</ul>
+</details>
+<hr />
+<details class="info">
+<summary>Use of AI</summary>
+<div class="language-text highlight"><pre><span></span><code>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+explanations, examples and/or structure suggestions. All information has been verified, edited, and completed 
+by the author.
+</code></pre></div>
+</details>
 
 
 
@@ -1583,7 +2147,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../01-getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Getting Started">
+          <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6. Abstract Base Classes (ABC)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1593,20 +2157,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                1. Getting Started
+                6. Abstract Base Classes (ABC)
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../B.%20Signals/01-button-click/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Button Click">
+          <a href="../02-layouts/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Layouts Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1. Button Click
+                2. Layouts Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

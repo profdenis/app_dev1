@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/01-getting-started/">
+        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/03-widgets/">
       
       
-        <link rel="prev" href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/">
+        <link rel="prev" href="../02-layouts/">
       
       
-        <link rel="next" href="../A.%20Introduction/01-hello-world/">
+        <link rel="next" href="../04-box-layouts-examples/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
     
     
       
-        <title>1. Getting Started - Application Development 1</title>
+        <title>3. Widgets Overview - Application Development 1</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,13 +48,13 @@
       
     
     
-      <link rel="stylesheet" href="../../style.css">
+      <link rel="stylesheet" href="../../../style.css">
     
-      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/puml.css">
     
-      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/interaction.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-getting-started" class="md-skip">
+        <a href="#3-widgets-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Application Development 1" class="md-header__button md-logo" aria-label="Application Development 1" data-md-component="logo">
+    <a href="../../.." title="Application Development 1" class="md-header__button md-logo" aria-label="Application Development 1" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Getting Started
+              3. Widgets Overview
             
           </span>
         </div>
@@ -229,7 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -248,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../1.%20Intro%20to%20Python/01-getting_started/" class="md-tabs__link">
+        <a href="../../../1.%20Intro%20to%20Python/01-getting_started/" class="md-tabs__link">
           
   
   1. Intro to Python
@@ -267,14 +267,25 @@
   
     
     
+      
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../01-hello-world/" class="md-tabs__link">
           
   
   2. PyQt
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -292,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../3.%20Managing%20Data/A.%20Files/01-overview/" class="md-tabs__link">
+        <a href="../../../3.%20Managing%20Data/A.%20Files/01-overview/" class="md-tabs__link">
           
   
   3. Managing Data
@@ -334,7 +345,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Application Development 1" class="md-nav__button md-logo" aria-label="Application Development 1" data-md-component="logo">
+    <a href="../../.." title="Application Development 1" class="md-nav__button md-logo" aria-label="Application Development 1" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -364,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/01-getting_started/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/01-getting_started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/02-history-use/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/02-history-use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/A.%20Overview/01-python-tutorial/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/A.%20Overview/01-python-tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/A.%20Overview/02-python-vs-java/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/A.%20Overview/02-python-vs-java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/A.%20Overview/03-type-system/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/A.%20Overview/03-type-system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/A.%20Overview/04-type-hints/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/A.%20Overview/04-type-hints/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -594,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/A.%20Overview/05-exercices/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/A.%20Overview/05-exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -665,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/01-oop-model/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/01-oop-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/02-classes/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/02-classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -707,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/03-single-inheritance/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/03-single-inheritance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -728,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/04-polymorphism/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/04-polymorphism/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/05-multiple-inheritance/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/05-multiple-inheritance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/" class="md-nav__link">
+      <a href="../../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,6 +863,93 @@
   
   
   
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    A. Introduction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            A. Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-hello-world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Creating Your First GUI Application
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-layouts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Layouts Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -860,15 +958,269 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3. Widgets Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    1. Getting Started
+    3. Widgets Overview
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-qlabel" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. QLabel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-qpushbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. QPushButton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-qlineedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. QLineEdit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-qtextedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. QTextEdit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-qcheckbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. QCheckBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-qradiobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. QRadioButton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-qcombobox" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. QComboBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-qlistwidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. QListWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-qslider" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. QSlider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qprogressbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. QProgressBar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-qspinbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. QSpinBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-qdial" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. QDial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-qtabwidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. QTabWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-qtablewidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. QTableWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-qtreewidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. QTreeWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Widgets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-box-layouts-examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Box Layouts Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-grid-layout-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Grid Layout Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Form Layout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -906,7 +1258,7 @@
             
   
   <span class="md-ellipsis">
-    A. Introduction
+    B. Signals
   </span>
   
 
@@ -916,7 +1268,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            A. Introduction
+            B. Signals
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -927,11 +1279,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../A.%20Introduction/01-hello-world/" class="md-nav__link">
+      <a href="../../B.%20Signals/01-button-click/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1. Hello World!
+    1. Introduction to Event Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/02-slider-dial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Example with a slider and a dial
   </span>
   
 
@@ -980,7 +1353,7 @@
             
   
   <span class="md-ellipsis">
-    B. Signals
+    C. Architecture
   </span>
   
 
@@ -990,7 +1363,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-            B. Signals
+            C. Architecture
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1001,11 +1374,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../B.%20Signals/01-button-click/" class="md-nav__link">
+      <a href="../../C.%20Architecture/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1. Button Click
+    1. Overview
   </span>
   
 
@@ -1054,7 +1427,7 @@
             
   
   <span class="md-ellipsis">
-    C. Architecture
+    D. Background Tasks
   </span>
   
 
@@ -1063,80 +1436,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
-            <span class="md-nav__icon md-icon"></span>
-            C. Architecture
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../C.%20Architecture/01-overview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1. Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    D. Background Tasks
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             D. Background Tasks
           </label>
@@ -1149,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../D.%20Background%20Tasks/01-responsive/" class="md-nav__link">
+      <a href="../../D.%20Background%20Tasks/01-responsive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1269,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.%20Managing%20Data/A.%20Files/01-overview/" class="md-nav__link">
+      <a href="../../../3.%20Managing%20Data/A.%20Files/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.%20Managing%20Data/B.%20Localization/01-overview/" class="md-nav__link">
+      <a href="../../../3.%20Managing%20Data/B.%20Localization/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1411,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.%20Managing%20Data/C.%20External%20Data%20Sources/01-overview/" class="md-nav__link">
+      <a href="../../../3.%20Managing%20Data/C.%20External%20Data%20Sources/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1482,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.%20Managing%20Data/D.%20Graphics/01-overview/" class="md-nav__link">
+      <a href="../../../3.%20Managing%20Data/D.%20Graphics/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1531,6 +1830,167 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-qlabel" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. QLabel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-qpushbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. QPushButton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-qlineedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. QLineEdit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-qtextedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. QTextEdit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-qcheckbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. QCheckBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-qradiobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. QRadioButton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-qcombobox" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. QComboBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-qlistwidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. QListWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-qslider" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. QSlider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qprogressbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. QProgressBar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-qspinbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. QSpinBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-qdial" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. QDial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-qtabwidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. QTabWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-qtablewidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. QTableWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-qtreewidget" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. QTreeWidget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Widgets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1547,7 +2007,185 @@
   
 
 
-<h1 id="1-getting-started">1. Getting Started<a class="headerlink" href="#1-getting-started" title="Permanent link">&para;</a></h1>
+<h1 id="3-widgets-overview">3. Widgets Overview<a class="headerlink" href="#3-widgets-overview" title="Permanent link">&para;</a></h1>
+<p>PyQt6 offers a wide range of widgets to build interactive and user-friendly GUI applications. Here are some of the most
+commonly used widgets:</p>
+<h3 id="1-qlabel"><strong>1. QLabel</strong><a class="headerlink" href="#1-qlabel" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Displays text or images.</li>
+<li>Often used for labels, instructions, or displaying information.</li>
+</ul>
+<h3 id="2-qpushbutton"><strong>2. QPushButton</strong><a class="headerlink" href="#2-qpushbutton" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A clickable button.</li>
+<li>Used to trigger actions or events.</li>
+</ul>
+<h3 id="3-qlineedit"><strong>3. QLineEdit</strong><a class="headerlink" href="#3-qlineedit" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Single-line text input field.</li>
+<li>Used for user input such as names, passwords, or search queries.</li>
+</ul>
+<h3 id="4-qtextedit"><strong>4. QTextEdit</strong><a class="headerlink" href="#4-qtextedit" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Multi-line text input and display.</li>
+<li>Suitable for larger text input or rich text display.</li>
+</ul>
+<h3 id="5-qcheckbox"><strong>5. QCheckBox</strong><a class="headerlink" href="#5-qcheckbox" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A box that can be checked or unchecked.</li>
+<li>Used for binary options or toggles.</li>
+</ul>
+<h3 id="6-qradiobutton"><strong>6. QRadioButton</strong><a class="headerlink" href="#6-qradiobutton" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A button in a group where only one can be selected.</li>
+<li>Used for mutually exclusive options.</li>
+</ul>
+<h3 id="7-qcombobox"><strong>7. QComboBox</strong><a class="headerlink" href="#7-qcombobox" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A drop-down list.</li>
+<li>Allows selection from multiple options.</li>
+</ul>
+<h3 id="8-qlistwidget"><strong>8. QListWidget</strong><a class="headerlink" href="#8-qlistwidget" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Displays a list of items.</li>
+<li>Supports selection and interaction with list elements.</li>
+</ul>
+<h3 id="9-qslider"><strong>9. QSlider</strong><a class="headerlink" href="#9-qslider" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A slider control for selecting a value from a range.</li>
+<li>Useful for volume control, brightness, or other continuous values.</li>
+</ul>
+<h3 id="10-qprogressbar"><strong>10. QProgressBar</strong><a class="headerlink" href="#10-qprogressbar" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Displays progress of a task.</li>
+<li>Useful for showing completion status.</li>
+</ul>
+<h3 id="11-qspinbox"><strong>11. QSpinBox</strong><a class="headerlink" href="#11-qspinbox" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A numeric input with up/down arrows.</li>
+<li>Used for integer input within a range.</li>
+</ul>
+<h3 id="12-qdial"><strong>12. QDial</strong><a class="headerlink" href="#12-qdial" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A round dial control.</li>
+<li>Alternative to sliders for selecting values.</li>
+</ul>
+<h3 id="13-qtabwidget"><strong>13. QTabWidget</strong><a class="headerlink" href="#13-qtabwidget" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Provides tabbed navigation.</li>
+<li>Useful for organizing content in tabs.</li>
+</ul>
+<h3 id="14-qtablewidget"><strong>14. QTableWidget</strong><a class="headerlink" href="#14-qtablewidget" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Displays data in a table format.</li>
+<li>Supports editing, sorting, and selection.</li>
+</ul>
+<h3 id="15-qtreewidget"><strong>15. QTreeWidget</strong><a class="headerlink" href="#15-qtreewidget" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Displays hierarchical data in a tree structure.</li>
+<li>Useful for file explorers or nested data.</li>
+</ul>
+<hr />
+<h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Widget</th>
+<th>Description</th>
+<th>Typical Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QLabel</td>
+<td>Displays text or images</td>
+<td>Labels, instructions</td>
+</tr>
+<tr>
+<td>QPushButton</td>
+<td>Clickable button</td>
+<td>Triggering actions</td>
+</tr>
+<tr>
+<td>QLineEdit</td>
+<td>Single-line text input</td>
+<td>User input fields</td>
+</tr>
+<tr>
+<td>QTextEdit</td>
+<td>Multi-line text input/display</td>
+<td>Larger text input or display</td>
+</tr>
+<tr>
+<td>QCheckBox</td>
+<td>Checkable box</td>
+<td>Binary options</td>
+</tr>
+<tr>
+<td>QRadioButton</td>
+<td>Exclusive selection button</td>
+<td>Mutually exclusive options</td>
+</tr>
+<tr>
+<td>QComboBox</td>
+<td>Drop-down list</td>
+<td>Selecting from options</td>
+</tr>
+<tr>
+<td>QListWidget</td>
+<td>List of items</td>
+<td>Item selection and interaction</td>
+</tr>
+<tr>
+<td>QSlider</td>
+<td>Slider control</td>
+<td>Selecting values continuously</td>
+</tr>
+<tr>
+<td>QProgressBar</td>
+<td>Progress indicator</td>
+<td>Task progress display</td>
+</tr>
+<tr>
+<td>QSpinBox</td>
+<td>Numeric input with arrows</td>
+<td>Integer input within range</td>
+</tr>
+<tr>
+<td>QDial</td>
+<td>Round dial control</td>
+<td>Alternative to sliders</td>
+</tr>
+<tr>
+<td>QTabWidget</td>
+<td>Tabbed navigation</td>
+<td>Organizing content in tabs</td>
+</tr>
+<tr>
+<td>QTableWidget</td>
+<td>Table display</td>
+<td>Data display and editing</td>
+</tr>
+<tr>
+<td>QTreeWidget</td>
+<td>Hierarchical tree display</td>
+<td>Nested data visualization</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="using-widgets">Using Widgets<a class="headerlink" href="#using-widgets" title="Permanent link">&para;</a></h2>
+<p>Widgets can be combined and arranged using layouts to create functional and visually appealing interfaces. Each widget
+has properties and signals that allow customization and interaction handling. This overview provides a foundation for
+exploring PyQt6 widgets and building GUI applications.</p>
+<hr />
+<details class="info">
+<summary>Use of AI</summary>
+<div class="language-text highlight"><pre><span></span><code>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
+author.
+</code></pre></div>
+</details>
 
 
 
@@ -1583,7 +2221,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6. Abstract Base Classes (ABC)">
+          <a href="../02-layouts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Layouts Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1593,20 +2231,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                6. Abstract Base Classes (ABC)
+                2. Layouts Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../A.%20Introduction/01-hello-world/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Hello World!">
+          <a href="../04-box-layouts-examples/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Box Layouts Examples">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1. Hello World!
+                4. Box Layouts Examples
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1640,22 +2278,22 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
-        <script src="../../javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../assets/mkdocs_puml/puml.js"></script>
+        <script src="../../../assets/mkdocs_puml/puml.js"></script>
       
         <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
       
-        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+        <script src="../../../assets/mkdocs_puml/interaction.js"></script>
       
     
   </body>

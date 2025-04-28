@@ -2,117 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://profdenis.github.io/app_dev1/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/01-getting_started/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/02-history-use/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/A.%20Overview/01-python-tutorial/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/A.%20Overview/02-python-vs-java/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/A.%20Overview/03-type-system/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/A.%20Overview/04-type-hints/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/A.%20Overview/05-exercices/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/01-oop-model/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/02-classes/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/03-single-inheritance/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/04-polymorphism/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/05-multiple-inheritance/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/1.%20Intro%20to%20Python/B.%20OOP%20in%20Python/06-abc/</loc>
-         <lastmod>2025-04-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/01-getting-started/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/01-hello-world/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/02-layouts/</loc>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/03-widgets/</loc>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/04-box-layouts-examples/</loc>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/05-grid-layout-example/</loc>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/06-form/</loc>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/B.%20Signals/01-button-click/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/B.%20Signals/02-slider-dial/</loc>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/C.%20Architecture/01-overview/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/D.%20Background%20Tasks/01-responsive/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/3.%20Managing%20Data/A.%20Files/01-overview/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/3.%20Managing%20Data/B.%20Localization/01-overview/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/3.%20Managing%20Data/C.%20External%20Data%20Sources/01-overview/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/app_dev1/3.%20Managing%20Data/D.%20Graphics/01-overview/</loc>
-         <lastmod>2025-04-26</lastmod>
+         <lastmod>2025-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

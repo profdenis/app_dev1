@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/C.%20Architecture/01-overview/">
+        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/04-box-layouts-examples/">
       
       
-        <link rel="prev" href="../../B.%20Signals/02-slider-dial/">
+        <link rel="prev" href="../03-widgets/">
       
       
-        <link rel="next" href="../../D.%20Background%20Tasks/01-responsive/">
+        <link rel="next" href="../05-grid-layout-example/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>1. Overview - Application Development 1</title>
+        <title>4. Box Layouts Examples - Application Development 1</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-overview" class="md-skip">
+        <a href="#4-box-layouts-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Overview
+              4. Box Layouts Examples
             
           </span>
         </div>
@@ -276,7 +276,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../A.%20Introduction/01-hello-world/" class="md-tabs__link">
+        <a href="../01-hello-world/" class="md-tabs__link">
           
   
   2. PyQt
@@ -859,8 +859,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -873,13 +875,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -893,7 +893,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             A. Introduction
@@ -907,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../A.%20Introduction/01-hello-world/" class="md-nav__link">
+      <a href="../01-hello-world/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../A.%20Introduction/02-layouts/" class="md-nav__link">
+      <a href="../02-layouts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -949,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../A.%20Introduction/03-widgets/" class="md-nav__link">
+      <a href="../03-widgets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,10 +967,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../A.%20Introduction/04-box-layouts-examples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4. Box Layouts Examples
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -979,6 +999,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qvboxlayout-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      QVBoxLayout Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-light-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting a light theme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qvboxlayout-example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      QVBoxLayout Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -991,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../A.%20Introduction/05-grid-layout-example/" class="md-nav__link">
+      <a href="../05-grid-layout-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1012,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../A.%20Introduction/06-form/" class="md-nav__link">
+      <a href="../06-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1133,8 +1200,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1149,11 +1214,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
@@ -1167,7 +1234,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             C. Architecture
@@ -1178,19 +1245,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../C.%20Architecture/01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1199,7 +1257,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1647,6 +1704,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qvboxlayout-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      QVBoxLayout Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-light-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting a light theme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qvboxlayout-example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      QVBoxLayout Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1663,7 +1755,197 @@
   
 
 
-<h1 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h1>
+<h1 id="4-box-layouts-examples">4. Box Layouts Examples<a class="headerlink" href="#4-box-layouts-examples" title="Permanent link">&para;</a></h1>
+<h2 id="qvboxlayout-example"><code>QVBoxLayout</code> Example<a class="headerlink" href="#qvboxlayout-example" title="Permanent link">&para;</a></h2>
+<p>Here is a simple example of using a <code>QVBoxLayout</code> in PyQt6 to arrange multiple widgets-<code>QLabel</code>, <code>QPushButton</code>,
+<code>QLineEdit</code>, <code>QCheckBox</code>, and <code>QRadioButton</code>-vertically in a window. This example does not connect any event functions;
+the widgets are for display only.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">QApplication</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QVBoxLayout</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">QLabel</span><span class="p">,</span> <span class="n">QPushButton</span><span class="p">,</span> <span class="n">QLineEdit</span><span class="p">,</span> <span class="n">QCheckBox</span><span class="p">,</span> <span class="n">QRadioButton</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;VBox Layout Example&quot;</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="c1"># Create the layout</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">layout</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="c1"># Create widgets</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="n">label</span> <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="s2">&quot;This is a QLabel&quot;</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="n">button</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s2">&quot;This is a QPushButton&quot;</span><span class="p">)</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="n">line_edit</span> <span class="o">=</span> <span class="n">QLineEdit</span><span class="p">(</span><span class="s2">&quot;This is a QLineEdit&quot;</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="n">checkbox</span> <span class="o">=</span> <span class="n">QCheckBox</span><span class="p">(</span><span class="s2">&quot;This is a QCheckBox&quot;</span><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="n">radio_button</span> <span class="o">=</span> <span class="n">QRadioButton</span><span class="p">(</span><span class="s2">&quot;This is a QRadioButton&quot;</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="c1"># Add widgets to the layout (top to bottom)</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">button</span><span class="p">)</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">line_edit</span><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">radio_button</span><span class="p">)</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        <span class="c1"># Set the layout on the main window</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div>
+<p><img alt="vbox.png" src="../vbox.png" /></p>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>A <code>QVBoxLayout</code> is created and assigned to the window.</li>
+<li>Each widget is created and added to the layout using <code>addWidget</code>, so they appear stacked vertically in the order
+  added.</li>
+<li>No event handlers are connected; the widgets are static for now.</li>
+</ul>
+<p>This pattern is the standard approach for arranging widgets vertically in PyQt6 and can be easily extended or modified
+as your application grows[2][4][5].</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://stackoverflow.com/questions/52692943/pyqt5-trying-to-use-qgridlayout-to-organise-my-qlabel-qlineedit-qpushbutton-a</li>
+<li>[2] https://www.pythonguis.com/tutorials/pyqt6-layouts/</li>
+<li>[3] https://realpython.com/python-pyqt-gui-calculator/</li>
+<li>[4] https://www.pythontutorial.net/pyqt/pyqt-qvboxlayout/</li>
+<li>[5] https://python-qt-tutorial.readthedocs.io/en/latest/3.layout.html</li>
+<li>[6] https://www.pythonguis.com/tutorials/pyqt6-widgets/</li>
+<li>[7] https://www.pythonguis.com/tutorials/pyqt-basic-widgets/</li>
+<li>[8] https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QVBoxLayout.html</li>
+<li>[9] https://github.com/pyqt/examples/blob/_/src/02%20PyQt%20Widgets/main.py</li>
+<li>[10] https://realpython.com/python-pyqt-layout/</li>
+<li>[11] https://stackabuse.com/working-with-pythons-pyqt-framework/</li>
+<li>[12] https://stackoverflow.com/questions/75810922/how-to-add-repeat-the-same-widget-on-qvboxlayout</li>
+<li>[13] https://www.pythonguis.com/tutorials/pyqt6-signals-slots-events/</li>
+<li>[14] https://doc.qt.io/qt-6/qpushbutton.html</li>
+<li>[15] https://forum.qt.io/topic/96888/making-widgets-touch-stick-together-in-a-layout</li>
+<li>[16] https://stackoverflow.com/questions/78165786/pyqt6-custom-signals-and-slots-connection</li>
+<li>[17] https://build-system.fman.io/pyqt5-tutorial</li>
+<li>[18] https://stackoverflow.com/questions/26614310/works-with-qgridlayout-not-with-qvboxlayout</li>
+<li>[19] https://www.pythontutorial.net/pyqt/pyqt-qradiobutton/</li>
+<li>[20] https://forum.qt.io/topic/138719/how-can-attributes-of-a-widget-that-triggered-a-clicked-connect-function-call-be-accessed</li>
+</ul>
+</details>
+<h2 id="setting-a-light-theme">Setting a light theme<a class="headerlink" href="#setting-a-light-theme" title="Permanent link">&para;</a></h2>
+<p>One issue with the previous example is that with the default dark theme used by the operating system on which these 
+notes and examples are written, the checkboxes and the radio buttons are not clearly visible. A more complete coverage
+of themes will come in a later section, but for now, here is a simple way to set a light theme for an application.</p>
+<ol type="1">
+<li>Install the <code>pyqtdarktheme</code> package with the command <code>pip install pyqtdarktheme</code>, or through the IDE&rsquo;s package 
+   manager.</li>
+<li>Import the package at the top of the file with <code>import qdarktheme</code>.</li>
+<li>Set the application&rsquo;s stylesheet this way:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">app</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="n">qdarktheme</span><span class="o">.</span><span class="n">load_stylesheet</span><span class="p">(</span><span class="s2">&quot;light&quot;</span><span class="p">))</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div></li>
+</ol>
+<p>And you get:</p>
+<p><img alt="img.png" src="../vbox2.png" /></p>
+<h2 id="qvboxlayout-example_1"><code>QVBoxLayout</code> Example<a class="headerlink" href="#qvboxlayout-example_1" title="Permanent link">&para;</a></h2>
+<p>Here is a simple PyQt6 example using a <code>QHBoxLayout</code> to arrange a <code>QComboBox</code>, <code>QListWidget</code>, <code>QSlider</code>, <code>QSpinBox</code>, and
+<code>QDial</code> horizontally in a window. This example does not connect any event handlers; the widgets are just displayed side
+by side:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">QApplication</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QHBoxLayout</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">QComboBox</span><span class="p">,</span> <span class="n">QListWidget</span><span class="p">,</span> <span class="n">QSlider</span><span class="p">,</span> <span class="n">QSpinBox</span><span class="p">,</span> <span class="n">QDial</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Qt</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;HBox Layout Example&quot;</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="c1"># Create the layout</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="n">layout</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="c1"># Create widgets</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="n">combo</span> <span class="o">=</span> <span class="n">QComboBox</span><span class="p">()</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="n">combo</span><span class="o">.</span><span class="n">addItems</span><span class="p">([</span><span class="s2">&quot;Option 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Option 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Option 3&quot;</span><span class="p">])</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="n">list_widget</span> <span class="o">=</span> <span class="n">QListWidget</span><span class="p">()</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="n">list_widget</span><span class="o">.</span><span class="n">addItems</span><span class="p">([</span><span class="s2">&quot;Item A&quot;</span><span class="p">,</span> <span class="s2">&quot;Item B&quot;</span><span class="p">,</span> <span class="s2">&quot;Item C&quot;</span><span class="p">])</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="n">slider</span> <span class="o">=</span> <span class="n">QSlider</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">Horizontal</span><span class="p">)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        <span class="n">slider</span><span class="o">.</span><span class="n">setMinimum</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="n">slider</span><span class="o">.</span><span class="n">setMaximum</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>        <span class="n">slider</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>        <span class="n">spinbox</span> <span class="o">=</span> <span class="n">QSpinBox</span><span class="p">()</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>        <span class="n">spinbox</span><span class="o">.</span><span class="n">setMinimum</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>        <span class="n">spinbox</span><span class="o">.</span><span class="n">setMaximum</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>        <span class="n">spinbox</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="n">dial</span> <span class="o">=</span> <span class="n">QDial</span><span class="p">()</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>        <span class="n">dial</span><span class="o">.</span><span class="n">setMinimum</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>        <span class="n">dial</span><span class="o">.</span><span class="n">setMaximum</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>        <span class="n">dial</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>        <span class="c1"># Add widgets to the layout (left to right)</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">combo</span><span class="p">)</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">list_widget</span><span class="p">)</span>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">slider</span><span class="p">)</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">spinbox</span><span class="p">)</span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">dial</span><span class="p">)</span>
+</span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>
+</span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="c1"># Set the layout on the main window</span>
+</span><span id="__span-2-47"><a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
+</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>
+</span><span id="__span-2-49"><a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>
+</span><span id="__span-2-50"><a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-2-51"><a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-2-52"><a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>    <span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-2-53"><a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-2-54"><a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div>
+<p><img alt="hbox.png" src="../hbox.png" /></p>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>A <code>QHBoxLayout</code> is created and set as the window&rsquo;s layout.</li>
+<li>Each widget is created and configured with some example data.</li>
+<li>The widgets are added to the layout in the order: <code>QComboBox</code>, <code>QListWidget</code>, <code>QSlider</code>, <code>QSpinBox</code>, <code>QDial</code>.</li>
+<li>The result is a window with all five widgets arranged horizontally, side by side[2][3][5][9].</li>
+</ul>
+<p>This is a standard approach for arranging widgets horizontally in PyQt6.</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://www.pythonguis.com/tutorials/pyqt6-layouts/</li>
+<li>[2] https://www.pythontutorial.net/pyqt/pyqt-qhboxlayout/</li>
+<li>[3] https://doc.qt.io/qt-6/qhboxlayout.html</li>
+<li>[4] https://zetcode.com/pyqt6/layout/</li>
+<li>[5] https://www.tutorialspoint.com/pyqt/pyqt_qhboxlayout.htm</li>
+<li>[6] https://www.pythontutorial.net/pyqt/pyqt-qcombobox/</li>
+<li>[7] https://doc.qt.io/qt-6/qtwidgets-layouts-basiclayouts-example.html</li>
+<li>[8] https://doc.qt.io/qt-6/qcombobox.html</li>
+<li>[9] https://realpython.com/python-pyqt-layout/</li>
+<li>[10] https://www.pythonguis.com/tutorials/pyqt6-widgets/</li>
+<li>[11] https://www.youtube.com/watch?v=Cc_zaUbF4LM</li>
+<li>[12] https://www.pythonguis.com/tutorials/pyqt-basic-widgets/</li>
+<li>[13] https://www.pythonguis.com/tutorials/pyqt6-qt-designer-gui-layout/</li>
+<li>[14] https://doc.qt.io/qt-6/stylesheet-examples.html</li>
+<li>[15] https://stackoverflow.com/questions/77107483/change-qhboxlayout-border-color-when-widget-clicked</li>
+<li>[16] https://forum.qt.io/topic/158910/pyqt6-selecting-multiple-items-from-a-qcombobox</li>
+<li>[17] https://www.youtube.com/live/WnHkx-AvTBA</li>
+<li>[18] https://doc.qt.io/qt-6/qslider.html</li>
+<li>[19] https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QSlider.html</li>
+<li>[20] https://stackoverflow.com/questions/67086226/qtable-get-qspinbox-qcombobox-value</li>
+</ul>
+</details>
 
 
 
@@ -1699,7 +1981,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../B.%20Signals/02-slider-dial/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Example with a slider and a dial">
+          <a href="../03-widgets/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Widgets Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1709,20 +1991,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                2. Example with a slider and a dial
+                3. Widgets Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../D.%20Background%20Tasks/01-responsive/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Responsive">
+          <a href="../05-grid-layout-example/" class="md-footer__link md-footer__link--next" aria-label="Next: 5. Grid Layout Examples">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1. Responsive
+                5. Grid Layout Examples
               </div>
             </div>
             <div class="md-footer__button md-icon">
