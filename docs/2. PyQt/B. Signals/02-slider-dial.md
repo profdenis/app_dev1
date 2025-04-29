@@ -107,6 +107,104 @@ development[1][4].
      - [20] https://stackoverflow.com/questions/47494941/python-pyqt4-qslider-interval-bigger-than-1
    
 
+## Alternative version with an instance attribute
+
+Here's a modified version of `LinkedControlsApp` that explicitly stores the current value in an instance attribute 
+and uses a setter method to handle updates:
+
+```python
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QSlider, QDial, QLabel, QVBoxLayout
+from PyQt6.QtCore import Qt
+
+class LinkedControlsApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.current_value = 1  # Instance attribute storing the state
+        self.init_ui()
+        
+    def init_ui(self):
+        layout = QVBoxLayout()
+        
+        # Create controls with range 1-10
+        self.slider = QSlider(Qt.Orientation.Horizontal)
+        self.dial = QDial()
+        self.label = QLabel(f"Value: {self.current_value}")
+        
+        # Set ranges
+        self.slider.setRange(1, 10)
+        self.dial.setRange(1, 10)
+        
+        # Add to layout
+        layout.addWidget(self.slider)
+        layout.addWidget(self.dial)
+        layout.addWidget(self.label)
+        self.setLayout(layout)
+        
+        # Connect signals to setter method
+        self.slider.valueChanged.connect(self.set_current_value)
+        self.dial.valueChanged.connect(self.set_current_value)
+        
+        # Initialize controls to current_value
+        self.slider.setValue(self.current_value)
+        self.dial.setValue(self.current_value)
+    
+    def set_current_value(self, value):
+        """Setter method that updates the instance attribute and synchronizes widgets"""
+        # Update the instance attribute
+        self.current_value = value
+        
+        # Update other widget and label, blocking signals to avoid loops
+        if self.sender() == self.slider:
+            widget = self.dial
+        else:
+            widget = self.slider
+
+        widget.blockSignals(True)
+        widget.setValue(value)
+        widget.blockSignals(False)
+        
+        self.label.setText(f"Value: {self.current_value}")
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = LinkedControlsApp()
+    window.setWindowTitle("Stateful Linked Controls")
+    window.show()
+    sys.exit(app.exec())
+```
+
+**Key Improvements:**
+1. **Explicit State Management**:
+   - `self.current_value` stores the current state
+   - All widget updates derive from this single source of truth
+
+2. **Dedicated Setter Method**:
+   - `set_current_value` handles state updates
+   - Ensures state and UI remain synchronized
+   - Prevents infinite loops using `blockSignals()`
+
+3. **Initialization**:
+   - Both controls initialized to `self.current_value`
+   - Label shows initial value from the instance attribute
+
+4. **Encapsulation**:
+   - State modification happens only through the setter
+   - UI updates are centralized in one method
+
+**Usage Notes:**
+- The instance attribute (`current_value`) acts as the source of truth
+- Any external modifications to `current_value` should go through `set_current_value`
+- The setter ensures all widgets and the label stay synchronized
+- Signal blocking prevents infinite update loops between connected widgets
+
+This pattern provides a clear separation between state management and UI updates, making it easier to extend or 
+modify the behavior later.
+
+
+
+
+
 ---------------
 
 ??? info "Use of AI"

@@ -797,6 +797,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#overloading-operators-and-isinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overloading operators and isinstance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-operator-overloading-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of operator overloading methods
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1729,6 +1747,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#overloading-operators-and-isinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overloading operators and isinstance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-operator-overloading-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of operator overloading methods
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1753,12 +1789,10 @@ However, there are some key differences in how these languages implement single 
 <h2 id="python-single-inheritance">Python Single Inheritance<a class="headerlink" href="#python-single-inheritance" title="Permanent link">&para;</a></h2>
 <p>In Python, single inheritance is implemented as follows:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">ParentClass</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># Parent class attributes and methods</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Parent class attributes and methods</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">ChildClass</span><span class="p">(</span><span class="n">ParentClass</span><span class="p">):</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Child class attributes and methods</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">ChildClass</span><span class="p">(</span><span class="n">ParentClass</span><span class="p">):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="c1"># Child class attributes and methods</span>
 </span></code></pre></div>
 <p>Key features of Python&rsquo;s single inheritance:</p>
 <ol type="1">
@@ -1809,8 +1843,8 @@ However, there are some key differences in how these languages implement single 
 <p>Syntax: Python&rsquo;s syntax is more concise, while Java&rsquo;s is more explicit with the <code>extends</code> keyword.</p>
 </li>
 <li>
-<p>Multiple inheritance: Python supports multiple inheritance, while Java only allows single inheritance for classes (
-   though it supports multiple interface implementation).</p>
+<p>Multiple inheritance: Python supports multiple inheritance, while Java only allows single inheritance for classes
+   (though it supports multiple interface implementation).</p>
 </li>
 <li>
 <p>Type system: Python&rsquo;s dynamic typing offers more flexibility, while Java&rsquo;s static typing provides compile-time type
@@ -1864,6 +1898,249 @@ structure and compile-time safety.</p>
 <li>[27] https://wiingy.com/learn/python/inheritance-in-python/</li>
 <li>[28] https://www.programiz.com/java-programming/inheritance</li>
 <li>[29] https://timespro.com/blog/inheritance-in-java-understand-with-examples</li>
+</ul>
+</details>
+<h2 id="overloading-operators-and-isinstance">Overloading operators and <code>isinstance</code><a class="headerlink" href="#overloading-operators-and-isinstance" title="Permanent link">&para;</a></h2>
+<p>To use <code>isinstance()</code> when overloading the <code>+</code> operator in a class, you typically check the type of the second operand
+to handle different addition scenarios. Here&rsquo;s an example with a <code>Vector</code> class that supports adding vectors or scalars:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Vector</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Vector</span><span class="p">):</span>  <span class="c1"># Vector + Vector</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>            <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>  <span class="c1"># Vector + scalar</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>            <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">other</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">other</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unsupported type for +: &#39;Vector&#39; and &#39;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Vector(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)&quot;</span>
+</span></code></pre></div>
+<p><strong>Key implementation details</strong>[2][4]:</p>
+<ol type="1">
+<li><strong>Type checking</strong>: <code>isinstance()</code> verifies if <code>other</code> is a <code>Vector</code> instance or numeric type</li>
+<li><strong>Multiple type support</strong>: The tuple <code>(int, float)</code> allows scalar addition with either integers or floats</li>
+<li><strong>Error handling</strong>: Raises <code>TypeError</code> for unsupported types</li>
+</ol>
+<p><strong>Example usage</strong>:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">v2</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">scalar</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span><span class="p">)</span>    <span class="c1"># Vector(3, 7)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">v1</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>     <span class="c1"># Vector(7, 8)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">v1</span> <span class="o">+</span> <span class="s2">&quot;str&quot;</span><span class="p">)</span> <span class="c1"># TypeError: Unsupported type for +: &#39;Vector&#39; and &#39;str&#39;</span>
+</span></code></pre></div></p>
+<p>This pattern ensures type safety while allowing flexible operations. The <code>isinstance()</code> check properly handles 
+inheritance hierarchies if you create subclasses of <code>Vector</code>[4]. For more complex scenarios, you might also implement
+<code>__radd__</code> to handle cases where the vector is on the right side of the <code>+</code> operator[5].</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://www.w3schools.com/python/ref_func_isinstance.asp</li>
+<li>[2] https://gist.github.com/699fb6f7c43ae1eb6e06</li>
+<li>[3] https://stackoverflow.com/questions/69210526/new-to-python-use-add-method-for-more-than-2-instances</li>
+<li>[4] https://pynative.com/python-isinstance-explained-with-examples/</li>
+<li>[5] https://realpython.com/python-magic-methods/</li>
+<li>[6] https://glennrowe.net/programmingpages/2021/06/13/overloading-arithmetic-operators/</li>
+<li>[7] https://stackoverflow.com/questions/62115060/python-how-to-use-add-special-method-to-add-instances-of-the-same-class-tha</li>
+<li>[8] https://www.pythonmorsels.com/every-dunder-method/</li>
+<li>[9] https://stackoverflow.com/questions/66803769/different-return-types-overloading-add</li>
+<li>[10] https://docs.python.org/3/tutorial/classes.html</li>
+<li>[11] https://docs.python.org/3/library/functions.html</li>
+<li>[12] https://testdriven.io/tips/aca1254d-ef6d-4de3-b4ba-8607c5d51737/</li>
+<li>[13] https://www.reddit.com/r/learnpython/comments/a2sodz/how_does_this_code_work_classes_add_method/</li>
+<li>[14] https://www.wscubetech.com/resources/python/operator-overloading</li>
+<li>[15] https://realpython.com/operator-function-overloading/</li>
+<li>[16] https://docs.python.org/3/library/operator.html</li>
+<li>[17] https://openstax.org/books/introduction-python-programming/pages/11-4-overloading-operators</li>
+<li>[18] https://hyperskill.org/university/python/isinstance-in-python</li>
+<li>[19] https://www.codearmo.com/python-tutorial/object-orientated-programming-arithmetic-methods</li>
+<li>[20] https://discuss.python.org/t/how-to-overload-add-method-in-a-self-made-class-to-sum-multiple-objects-of-the-class/40543</li>
+</ul>
+</details>
+<h2 id="table-of-operator-overloading-methods">Table of operator overloading methods<a class="headerlink" href="#table-of-operator-overloading-methods" title="Permanent link">&para;</a></h2>
+<p>Here is a table summarizing the main operators that can be overloaded in Python, along with their corresponding 
+special (magic/dunder) methods[2][3][4]:</p>
+<table>
+<thead>
+<tr>
+<th>Operator Symbol</th>
+<th>Operation Name</th>
+<th>Special Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td><code>__add__</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td><code>__sub__</code></td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td><code>__mul__</code></td>
+</tr>
+<tr>
+<td>/</td>
+<td>True Division</td>
+<td><code>__truediv__</code></td>
+</tr>
+<tr>
+<td>//</td>
+<td>Floor Division</td>
+<td><code>__floordiv__</code></td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulo</td>
+<td><code>__mod__</code></td>
+</tr>
+<tr>
+<td>**</td>
+<td>Power</td>
+<td><code>__pow__</code></td>
+</tr>
+<tr>
+<td>+=</td>
+<td>In-place Addition</td>
+<td><code>__iadd__</code></td>
+</tr>
+<tr>
+<td>-=</td>
+<td>In-place Subtraction</td>
+<td><code>__isub__</code></td>
+</tr>
+<tr>
+<td>*=</td>
+<td>In-place Multiplication</td>
+<td><code>__imul__</code></td>
+</tr>
+<tr>
+<td>/=</td>
+<td>In-place True Division</td>
+<td><code>__itruediv__</code></td>
+</tr>
+<tr>
+<td>//=</td>
+<td>In-place Floor Division</td>
+<td><code>__ifloordiv__</code></td>
+</tr>
+<tr>
+<td>%=</td>
+<td>In-place Modulo</td>
+<td><code>__imod__</code></td>
+</tr>
+<tr>
+<td>**=</td>
+<td>In-place Power</td>
+<td><code>__ipow__</code></td>
+</tr>
+<tr>
+<td>- (unary)</td>
+<td>Negation</td>
+<td><code>__neg__</code></td>
+</tr>
+<tr>
+<td>+ (unary)</td>
+<td>Unary Plus</td>
+<td><code>__pos__</code></td>
+</tr>
+<tr>
+<td>~</td>
+<td>Bitwise NOT</td>
+<td><code>__invert__</code></td>
+</tr>
+<tr>
+<td></td>
+<td>Greater Than</td>
+<td><code>__gt__</code></td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater Than or Equal</td>
+<td><code>__ge__</code></td>
+</tr>
+<tr>
+<td>[]</td>
+<td>Indexing</td>
+<td><code>__getitem__</code></td>
+</tr>
+<tr>
+<td>[]=</td>
+<td>Item Assignment</td>
+<td><code>__setitem__</code></td>
+</tr>
+<tr>
+<td>del []</td>
+<td>Item Deletion</td>
+<td><code>__delitem__</code></td>
+</tr>
+<tr>
+<td>()</td>
+<td>Call</td>
+<td><code>__call__</code></td>
+</tr>
+<tr>
+<td>str()</td>
+<td>String Conversion</td>
+<td><code>__str__</code></td>
+</tr>
+<tr>
+<td>repr()</td>
+<td>Representation</td>
+<td><code>__repr__</code></td>
+</tr>
+<tr>
+<td>len()</td>
+<td>Length</td>
+<td><code>__len__</code></td>
+</tr>
+<tr>
+<td>hash()</td>
+<td>Hashing</td>
+<td><code>__hash__</code></td>
+</tr>
+<tr>
+<td>bool()</td>
+<td>Truth Value</td>
+<td><code>__bool__</code></td>
+</tr>
+</tbody>
+</table>
+<p>This table covers the most commonly overloaded operators. There are additional magic methods for bitwise operations, 
+attribute access, context management, and more, but these are the core operators you will typically overload in custom 
+classes[2][3][4].</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://www.programiz.com/python-programming/operator-overloading</li>
+<li>[2] https://wiingy.com/learn/python/operator-overloading-in-python/</li>
+<li>[3] https://docs.python.org/3/reference/datamodel.html</li>
+<li>[4] https://docs.python.org/3/library/operator.html</li>
+<li>[5] https://www.wscubetech.com/resources/python/operator-overloading</li>
+<li>[6] https://www.stat.berkeley.edu/~spector/extension/python/notes/node109.html</li>
+<li>[7] https://pythonflood.com/python-operator-overloading-a-comprehensive-guide-c96c22176646</li>
+<li>[8] https://peps.python.org/pep-0335/</li>
+<li>[9] https://www.pythonlikeyoumeanit.com/Module4_OOP/Special_Methods.html</li>
+<li>[10] https://www.w3schools.com/python/python_operators.asp</li>
+<li>[11] https://realpython.com/python-magic-methods/</li>
+<li>[12] https://www.teach.cs.toronto.edu/~csc110y/fall/notes/A-python-builtins/03-special-methods.html</li>
+<li>[13] https://openstax.org/books/introduction-python-programming/pages/11-4-overloading-operators</li>
+<li>[14] https://python-course.eu/oop/magic-methods.php</li>
+<li>[15] https://www.pythonmorsels.com/every-dunder-method/</li>
+<li>[16] https://github.com/milaan9/06_Python_Object_Class/blob/main/004_Python_Operator_Overloading.ipynb</li>
+<li>[17] https://stackoverflow.com/questions/64582940/table-of-python-operand-types</li>
+<li>[18] https://www.algorystcorner.com/operator-overloading-in-python/</li>
+<li>[19] https://stackoverflow.com/questions/2400635/comprehensive-guide-to-operator-overloading-in-python</li>
 </ul>
 </details>
 <hr />

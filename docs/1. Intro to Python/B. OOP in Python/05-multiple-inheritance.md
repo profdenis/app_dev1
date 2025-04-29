@@ -273,24 +273,25 @@ For most cases, stick to using `super()` consistently and design your classes to
 building frameworks or mixins[6][7].
 
 ??? note "References"
-- [1] https://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance
-- [2] https://docs.vultr.com/python/built-in/super
-- [3] https://www.datacamp.com/tutorial/super-multiple-inheritance-diamond-problem
-- [4] https://www.digitalocean.com/community/tutorials/python-super
-- [5] https://www.geeksforgeeks.org/python-multiple-inheritance-with-super-function/
-- [6] https://realpython.com/lessons/multiple-inheritance-python/
-- [7] https://realpython.com/python-super/
-- [8] https://www.programiz.com/python-programming/multiple-inheritance
-- [9] https://www.geeksforgeeks.org/multiple-inheritance-in-python/
-- [10] https://www.sololearn.com/en/Discuss/1934244/super-with-multiple-inheritance
-- [11] https://www.reddit.com/r/learnpython/comments/z9e00j/what_is_the_point_of_the_super_function_in_python/
-- [12] https://aviadr1.github.io/learn-advanced-python/06_multiple_inheritance_and_super/multiple_inheritance_and_super.html
-- [13] https://stackoverflow.com/questions/14206015/pythons-multiple-inheritance-picking-which-super-to-call
-- [14] https://www.youtube.com/watch?v=PA3Lnkqz1Ww
-- [15] https://blog.hubspot.com/website/python-super
-- [16] https://www.w3schools.com/python/python_inheritance.asp
-- [17] https://discuss.python.org/t/make-super-work-in-a-class-definition/48845
-- [18] https://www.reddit.com/r/learnpython/comments/ndyce5/a_question_about_super_and_multiple_inheritance/
+
+      - [1] https://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance
+      - [2] https://docs.vultr.com/python/built-in/super
+      - [3] https://www.datacamp.com/tutorial/super-multiple-inheritance-diamond-problem
+      - [4] https://www.digitalocean.com/community/tutorials/python-super
+      - [5] https://www.geeksforgeeks.org/python-multiple-inheritance-with-super-function/
+      - [6] https://realpython.com/lessons/multiple-inheritance-python/
+      - [7] https://realpython.com/python-super/
+      - [8] https://www.programiz.com/python-programming/multiple-inheritance
+      - [9] https://www.geeksforgeeks.org/multiple-inheritance-in-python/
+      - [10] https://www.sololearn.com/en/Discuss/1934244/super-with-multiple-inheritance
+      - [11] https://www.reddit.com/r/learnpython/comments/z9e00j/what_is_the_point_of_the_super_function_in_python/
+      - [12] https://aviadr1.github.io/learn-advanced-python/06_multiple_inheritance_and_super/multiple_inheritance_and_super.html
+      - [13] https://stackoverflow.com/questions/14206015/pythons-multiple-inheritance-picking-which-super-to-call
+      - [14] https://www.youtube.com/watch?v=PA3Lnkqz1Ww
+      - [15] https://blog.hubspot.com/website/python-super
+      - [16] https://www.w3schools.com/python/python_inheritance.asp
+      - [17] https://discuss.python.org/t/make-super-work-in-a-class-definition/48845
+      - [18] https://www.reddit.com/r/learnpython/comments/ndyce5/a_question_about_super_and_multiple_inheritance/
 
 ## Example with the diamond problem
 
