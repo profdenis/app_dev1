@@ -131,6 +131,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/E.%20Exercises/01-counter/</loc>
+         <lastmod>2025-05-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/app_dev1/2.%20PyQt/E.%20Exercises/02-counter-solutions/</loc>
+         <lastmod>2025-05-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://profdenis.github.io/app_dev1/3.%20Managing%20Data/A.%20Files/01-overview/</loc>
          <lastmod>2025-05-06</lastmod>
          <changefreq>daily</changefreq>
