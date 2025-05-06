@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
 ![vbox.png](vbox.png)
 
-**How it works:**
+### How it works
 
 - A `QVBoxLayout` is created and assigned to the window.
 - Each widget is created and added to the layout using `addWidget`, so they appear stacked vertically in the order
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 
 ![hbox.png](hbox.png)
 
-**How it works:**
+### How it works
 
 - A `QHBoxLayout` is created and set as the window's layout.
 - Each widget is created and configured with some example data.
@@ -200,3 +200,11 @@ This is a standard approach for arranging widgets horizontally in PyQt6.
     - [18] https://doc.qt.io/qt-6/qslider.html
     - [19] https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QSlider.html
     - [20] https://stackoverflow.com/questions/67086226/qtable-get-qspinbox-qcombobox-value
+
+
+---------------
+
+??? info "Use of AI"
+    Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+    explanations, examples and/or structure suggestions. All information has been verified, edited and completed by
+    the author.

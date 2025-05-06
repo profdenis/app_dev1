@@ -1242,6 +1242,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/03-pyqtSignal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Defining and using custom signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/04-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Submitting form data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1866,43 +1908,43 @@
 <h1 id="2-layouts-overview">2. Layouts Overview<a class="headerlink" href="#2-layouts-overview" title="Permanent link">&para;</a></h1>
 <p>PyQt6 provides several layout managers that automatically arrange widgets within windows, ensuring your GUI adapts well
 to resizing and different screen sizes. Here’s an overview of the main layouts available:</p>
-<h2 id="1-qvboxlayout"><strong>1. QVBoxLayout</strong><a class="headerlink" href="#1-qvboxlayout" title="Permanent link">&para;</a></h2>
+<h2 id="1-qvboxlayout">1. QVBoxLayout<a class="headerlink" href="#1-qvboxlayout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Arranges widgets vertically, from top to bottom.</li>
 <li>Each widget is placed below the previous one.</li>
 <li>Commonly used for stacking elements in a column.</li>
 <li>Example: A settings panel with labels and input fields stacked vertically[1][2][5][6].</li>
 </ul>
-<h2 id="2-qhboxlayout"><strong>2. QHBoxLayout</strong><a class="headerlink" href="#2-qhboxlayout" title="Permanent link">&para;</a></h2>
+<h2 id="2-qhboxlayout">2. QHBoxLayout<a class="headerlink" href="#2-qhboxlayout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Arranges widgets horizontally, from left to right.</li>
 <li>Each widget is placed to the right of the previous one.</li>
 <li>Useful for toolbars, button rows, or any horizontal grouping[1][2][3][5][6].</li>
 </ul>
-<h2 id="3-qgridlayout"><strong>3. QGridLayout</strong><a class="headerlink" href="#3-qgridlayout" title="Permanent link">&para;</a></h2>
+<h2 id="3-qgridlayout">3. QGridLayout<a class="headerlink" href="#3-qgridlayout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Arranges widgets in a two-dimensional grid (rows and columns).</li>
 <li>Widgets can span multiple rows or columns.</li>
 <li>Ideal for forms, calculators, or any layout requiring tabular alignment[1][2][5][6].</li>
 </ul>
-<h2 id="4-qformlayout"><strong>4. QFormLayout</strong><a class="headerlink" href="#4-qformlayout" title="Permanent link">&para;</a></h2>
+<h2 id="4-qformlayout">4. QFormLayout<a class="headerlink" href="#4-qformlayout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Specifically designed for forms: pairs labels and fields in two columns.</li>
 <li>Left column: labels; right column: input widgets (e.g., text fields, combo boxes).</li>
 <li>Simpler and more readable than QGridLayout when you only need two columns[4][6][7].</li>
 </ul>
-<h2 id="5-qstackedlayout"><strong>5. QStackedLayout</strong><a class="headerlink" href="#5-qstackedlayout" title="Permanent link">&para;</a></h2>
+<h2 id="5-qstackedlayout">5. QStackedLayout<a class="headerlink" href="#5-qstackedlayout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Stacks widgets on top of each other; only one widget is visible at a time.</li>
 <li>Useful for implementing tabbed interfaces or wizards where you switch between different views[1].</li>
 </ul>
-<h2 id="6-qsplitter"><strong>6. QSplitter</strong><a class="headerlink" href="#6-qsplitter" title="Permanent link">&para;</a></h2>
+<h2 id="6-qsplitter">6. QSplitter<a class="headerlink" href="#6-qsplitter" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Not a layout, but a container widget that arranges child widgets horizontally or vertically with adjustable dividers.</li>
 <li>Allows the user to resize panels interactively[4].</li>
 </ul>
 <hr />
-<h2 id="summary-table"><strong>Summary Table</strong><a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1945,11 +1987,11 @@ to resizing and different screen sizes. Here’s an overview of the main layouts
 </tbody>
 </table>
 <hr />
-<h2 id="nesting-layouts"><strong>Nesting Layouts</strong><a class="headerlink" href="#nesting-layouts" title="Permanent link">&para;</a></h2>
+<h2 id="nesting-layouts">Nesting Layouts<a class="headerlink" href="#nesting-layouts" title="Permanent link">&para;</a></h2>
 <p>You can nest layouts inside each other to create complex, responsive interfaces. For example, a horizontal layout might
 contain several vertical layouts, each managing a column of widgets[1][2].</p>
 <hr />
-<h2 id="choosing-a-layout"><strong>Choosing a Layout</strong><a class="headerlink" href="#choosing-a-layout" title="Permanent link">&para;</a></h2>
+<h2 id="choosing-a-layout">Choosing a Layout<a class="headerlink" href="#choosing-a-layout" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Use <strong>QVBoxLayout</strong> or <strong>QHBoxLayout</strong> for simple linear arrangements.</li>
 <li>Use <strong>QGridLayout</strong> for tabular or matrix-like layouts.</li>

@@ -3,44 +3,44 @@
 PyQt6 provides several layout managers that automatically arrange widgets within windows, ensuring your GUI adapts well
 to resizing and different screen sizes. Here’s an overview of the main layouts available:
 
-## **1. QVBoxLayout**
+## 1. QVBoxLayout
 
 - Arranges widgets vertically, from top to bottom.
 - Each widget is placed below the previous one.
 - Commonly used for stacking elements in a column.
 - Example: A settings panel with labels and input fields stacked vertically[1][2][5][6].
 
-## **2. QHBoxLayout**
+## 2. QHBoxLayout
 
 - Arranges widgets horizontally, from left to right.
 - Each widget is placed to the right of the previous one.
 - Useful for toolbars, button rows, or any horizontal grouping[1][2][3][5][6].
 
-## **3. QGridLayout**
+## 3. QGridLayout
 
 - Arranges widgets in a two-dimensional grid (rows and columns).
 - Widgets can span multiple rows or columns.
 - Ideal for forms, calculators, or any layout requiring tabular alignment[1][2][5][6].
 
-## **4. QFormLayout**
+## 4. QFormLayout
 
 - Specifically designed for forms: pairs labels and fields in two columns.
 - Left column: labels; right column: input widgets (e.g., text fields, combo boxes).
 - Simpler and more readable than QGridLayout when you only need two columns[4][6][7].
 
-## **5. QStackedLayout**
+## 5. QStackedLayout
 
 - Stacks widgets on top of each other; only one widget is visible at a time.
 - Useful for implementing tabbed interfaces or wizards where you switch between different views[1].
 
-## **6. QSplitter**
+## 6. QSplitter
 
 - Not a layout, but a container widget that arranges child widgets horizontally or vertically with adjustable dividers.
 - Allows the user to resize panels interactively[4].
 
 ---
 
-## **Summary Table**
+## Summary Table
 
 | Layout         | Arrangement                     | Typical Use Case                        |
 |----------------|---------------------------------|-----------------------------------------|
@@ -53,14 +53,14 @@ to resizing and different screen sizes. Here’s an overview of the main layouts
 
 ---
 
-## **Nesting Layouts**
+## Nesting Layouts
 
 You can nest layouts inside each other to create complex, responsive interfaces. For example, a horizontal layout might
 contain several vertical layouts, each managing a column of widgets[1][2].
 
 ---
 
-## **Choosing a Layout**
+## Choosing a Layout
 
 - Use **QVBoxLayout** or **QHBoxLayout** for simple linear arrangements.
 - Use **QGridLayout** for tabular or matrix-like layouts.

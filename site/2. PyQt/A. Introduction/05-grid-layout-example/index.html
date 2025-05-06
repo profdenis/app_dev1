@@ -1043,6 +1043,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1052,14 +1067,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#below-is-a-practical-example" class="md-nav__link">
+    <nav class="md-nav" aria-label="Example 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
     <span class="md-ellipsis">
-      Below is a practical example:
+      Explanation
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1179,6 +1200,48 @@
   
   <span class="md-ellipsis">
     2. Example with a slider and a dial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/03-pyqtSignal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Defining and using custom signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/04-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Submitting form data
   </span>
   
 
@@ -1717,6 +1780,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1726,14 +1804,20 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#below-is-a-practical-example" class="md-nav__link">
+    <nav class="md-nav" aria-label="Example 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
     <span class="md-ellipsis">
-      Below is a practical example:
+      Explanation
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1788,7 +1872,7 @@ Each label will indicate its cell’s row and column:</p>
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
 </span></code></pre></div>
 <p><img alt="grid.png" src="../grid.png" /></p>
-<p><strong>How it works:</strong></p>
+<h3 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The outer loop runs for 3 rows (<code>range(3)</code>)</li>
 <li>The inner loop runs for 5 columns (<code>range(5)</code>)</li>
@@ -1798,7 +1882,7 @@ Each label will indicate its cell’s row and column:</p>
 <h2 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h2>
 <p>It is possible for a widget in a <code>QGridLayout</code> to occupy more than one row and/or column. You can achieve this by 
 using the <code>addWidget()</code> method with additional arguments specifying the row span and column span[1][2][3][5].</p>
-<h2 id="below-is-a-practical-example">Below is a practical example:<a class="headerlink" href="#below-is-a-practical-example" title="Permanent link">&para;</a></h2>
+<p>Below is a practical example:  </p>
 <ul>
 <li>A <code>QTextEdit</code> spans two rows and two columns (top-left of the grid).</li>
 <li>A <code>QListWidget</code> spans one row and two columns (top-right).</li>
@@ -1870,7 +1954,7 @@ using the <code>addWidget()</code> method with additional arguments specifying t
 </span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
 </span></code></pre></div>
 <p><img alt="grid2.png" src="../grid2.png" /></p>
-<p><strong>Explanation:</strong></p>
+<h3 id="explanation">Explanation<a class="headerlink" href="#explanation" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The <code>addWidget()</code> method can take <code>row</code>, <code>column</code>, <code>rowSpan</code>, and <code>columnSpan</code> arguments, allowing widgets to 
   cover multiple grid cells[1][2][3][5].</li>

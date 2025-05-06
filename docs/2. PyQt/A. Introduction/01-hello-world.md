@@ -69,11 +69,11 @@ Alternatively, you can use the *Python Packages* tool window to install PyQt6. H
    - After installation, `PyQt6` should appear in your list of installed packages in the same window[3].
    - You can now import and use PyQt6 in your project.
 
-**Tip:**  
+!!! info "Tips"  
 
-- The Python Packages tool window also allows you to view package documentation, upgrade, or uninstall packages 
-  easily[3][4][5].
-- Always make sure you have the correct Python interpreter selected for your project to avoid installation issues[1][2].
+    - The Python Packages tool window also allows you to view package documentation, upgrade, or uninstall packages 
+      easily[3][4][5].
+    - Always make sure you have the correct Python interpreter selected for your project to avoid installation issues[1][2].
 
 
 ## Your First PyQt6 Application: Hello World

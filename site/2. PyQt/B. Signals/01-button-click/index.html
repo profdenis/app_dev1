@@ -1147,6 +1147,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example: Button Click Displays a Random Number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1179,6 +1194,48 @@
   
   <span class="md-ellipsis">
     2. Example with a slider and a dial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-pyqtSignal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Defining and using custom signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Submitting form data
   </span>
   
 
@@ -1726,6 +1783,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example: Button Click Displays a Random Number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1756,9 +1828,9 @@
 
 
 <h1 id="1-introduction-to-event-handling">1. Introduction to Event Handling<a class="headerlink" href="#1-introduction-to-event-handling" title="Permanent link">&para;</a></h1>
-<p>Event handling is central to creating interactive GUI applications. In PyQt, events-such as button clicks, mouse
-movements, or key presses-are managed using a powerful mechanism called <strong>signals and slots</strong>. This system allows you to
-respond to user actions in a clean and decoupled way[1][4][5].</p>
+<p>Event handling is central to creating interactive GUI applications. In PyQt, events, such as button clicks, mouse
+movements, or key presses, are managed using a powerful mechanism called <strong>signals and slots</strong>. This system allows 
+you to respond to user actions in a clean and decoupled way[1][4][5].</p>
 <ul>
 <li><strong>Signal:</strong> An event notification emitted by a widget (e.g., a button emits a signal when clicked).</li>
 <li><strong>Slot:</strong> A Python function or method that is called in response to a signal.</li>
@@ -1768,7 +1840,11 @@ event-driven programming in PyQt[1][4][5].</p>
 <h2 id="events-implemented-using-signals-in-qt">Events Implemented Using Signals in Qt<a class="headerlink" href="#events-implemented-using-signals-in-qt" title="Permanent link">&para;</a></h2>
 <p>In Qt (and therefore PyQt), most user actions (events) are implemented as signals.
 Widgets emit signals when something happens (like a button being clicked), and you connect these signals to slots
-(functions) to define what should happen in response[1][4][5].</p>
+(functions) to define what should happen in response[1][4][5]. </p>
+<p>This is not exactly the same as the 
+<em>Observer-Observable</em> pattern, but <em>signals and slots</em> play a similar role. In a sense, widgets are<br />
+<em>observables</em>, and slots are <em>observers</em>, and the signals are used by the observers (widgets) to contact (or execute) 
+the observables (slots).</p>
 <h2 id="example-button-click-displays-a-random-number">Example: Button Click Displays a Random Number<a class="headerlink" href="#example-button-click-displays-a-random-number" title="Permanent link">&para;</a></h2>
 <p>Below is a minimal PyQt6 example with a button and a label. When the button is clicked, a random integer between 1 and
 100 (inclusive) is displayed in the label.</p>
@@ -1808,7 +1884,7 @@ Widgets emit signals when something happens (like a button being clicked), and y
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
 </span></code></pre></div>
 <p><img alt="button.png" src="../button.png" /></p>
-<p><strong>Key Points:</strong></p>
+<h3 id="key-points">Key Points<a class="headerlink" href="#key-points" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The <code>clicked</code> signal of the button is connected to the <code>show_random_number</code> method, which is called every time the
   button is pressed[4].</li>
@@ -1873,10 +1949,9 @@ functions to make your application respond to user actions.</p>
 <hr />
 <details class="info">
 <summary>Use of AI</summary>
-<div class="language-text highlight"><pre><span></span><code>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-explanations, examples and/or structure suggestions. All information has been verified, edited and completed by 
-the author.
-</code></pre></div>
+<p>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+explanations, examples and/or structure suggestions. All information has been verified, edited, and completed by 
+the author.</p>
 </details>
 
 

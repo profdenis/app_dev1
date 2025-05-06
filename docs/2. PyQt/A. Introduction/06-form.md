@@ -74,12 +74,12 @@ if __name__ == "__main__":
 
 ![img.png](form.png)
 
-**Features:**
+## Features
 
 - Uses `QFormLayout` for a clean, two-column form[2][4].
 - Each row pairs a label with an input widget.
 - Includes line edits, date picker, checkbox, combo boxes, and spin box for a realistic "Person" entry form.
-- A submit button is provided at the bottom.
+- A _submit_ button is provided at the bottom.
 
 You can easily add or remove attributes by following the same pattern with `layout.addRow(label, widget)`. This form is
 responsive and follows platform look-and-feel standards[2][4].

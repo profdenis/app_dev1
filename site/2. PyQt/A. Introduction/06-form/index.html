@@ -1021,6 +1021,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    6. Form Layout
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1030,6 +1041,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1122,6 +1161,48 @@
   
   <span class="md-ellipsis">
     2. Example with a slider and a dial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/03-pyqtSignal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Defining and using custom signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B.%20Signals/04-form/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Submitting form data
   </span>
   
 
@@ -1647,6 +1728,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1734,12 +1832,12 @@ follows best practices as described here[2][4]:</p>
 </span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
 </span></code></pre></div>
 <p><img alt="img.png" src="../form.png" /></p>
-<p><strong>Features:</strong></p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Uses <code>QFormLayout</code> for a clean, two-column form[2][4].</li>
 <li>Each row pairs a label with an input widget.</li>
 <li>Includes line edits, date picker, checkbox, combo boxes, and spin box for a realistic &ldquo;Person&rdquo; entry form.</li>
-<li>A submit button is provided at the bottom.</li>
+<li>A <em>submit</em> button is provided at the bottom.</li>
 </ul>
 <p>You can easily add or remove attributes by following the same pattern with <code>layout.addRow(label, widget)</code>. This form is
 responsive and follows platform look-and-feel standards[2][4].</p>

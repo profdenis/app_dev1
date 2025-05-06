@@ -3,77 +3,77 @@
 PyQt6 offers a wide range of widgets to build interactive and user-friendly GUI applications. Here are some of the most
 commonly used widgets:
 
-### **1. QLabel**
+### 1. QLabel
 
 - Displays text or images.
 - Often used for labels, instructions, or displaying information.
 
-### **2. QPushButton**
+### 2. QPushButton
 
 - A clickable button.
 - Used to trigger actions or events.
 
-### **3. QLineEdit**
+### 3. QLineEdit
 
 - Single-line text input field.
 - Used for user input such as names, passwords, or search queries.
 
-### **4. QTextEdit**
+### 4. QTextEdit
 
 - Multi-line text input and display.
 - Suitable for larger text input or rich text display.
 
-### **5. QCheckBox**
+### 5. QCheckBox
 
 - A box that can be checked or unchecked.
 - Used for binary options or toggles.
 
-### **6. QRadioButton**
+### 6. QRadioButton
 
 - A button in a group where only one can be selected.
 - Used for mutually exclusive options.
 
-### **7. QComboBox**
+### 7. QComboBox
 
 - A drop-down list.
 - Allows selection from multiple options.
 
-### **8. QListWidget**
+### 8. QListWidget
 
 - Displays a list of items.
 - Supports selection and interaction with list elements.
 
-### **9. QSlider**
+### 9. QSlider
 
 - A slider control for selecting a value from a range.
 - Useful for volume control, brightness, or other continuous values.
 
-### **10. QProgressBar**
+### 10. QProgressBar
 
 - Displays progress of a task.
 - Useful for showing completion status.
 
-### **11. QSpinBox**
+### 11. QSpinBox
 
 - A numeric input with up/down arrows.
 - Used for integer input within a range.
 
-### **12. QDial**
+### 12. QDial
 
 - A round dial control.
 - Alternative to sliders for selecting values.
 
-### **13. QTabWidget**
+### 13. QTabWidget
 
 - Provides tabbed navigation.
 - Useful for organizing content in tabs.
 
-### **14. QTableWidget**
+### 14. QTableWidget
 
 - Displays data in a table format.
 - Supports editing, sorting, and selection.
 
-### **15. QTreeWidget**
+### 15. QTreeWidget
 
 - Displays hierarchical data in a tree structure.
 - Useful for file explorers or nested data.

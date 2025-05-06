@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
 ![grid.png](grid.png)
 
-**How it works:**
+### How it works
 
 - The outer loop runs for 3 rows (`range(3)`)
 - The inner loop runs for 5 columns (`range(5)`)
@@ -52,7 +52,7 @@ It is possible for a widget in a `QGridLayout` to occupy more than one row and/o
 using the `addWidget()` method with additional arguments specifying the row span and column span[1][2][3][5].
 
 Below is a practical example:  
-- 
+
 - A `QTextEdit` spans two rows and two columns (top-left of the grid).
 - A `QListWidget` spans one row and two columns (top-right).
 - A `QPushButton` spans two rows and one column (bottom-left).
@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
 ![grid2.png](grid2.png)
 
-**Explanation:**
+### Explanation
 
 - The `addWidget()` method can take `row`, `column`, `rowSpan`, and `columnSpan` arguments, allowing widgets to 
   cover multiple grid cells[1][2][3][5].

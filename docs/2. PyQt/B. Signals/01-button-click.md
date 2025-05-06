@@ -1,8 +1,8 @@
 # 1. Introduction to Event Handling
 
-Event handling is central to creating interactive GUI applications. In PyQt, events-such as button clicks, mouse
-movements, or key presses-are managed using a powerful mechanism called **signals and slots**. This system allows you to
-respond to user actions in a clean and decoupled way[1][4][5].
+Event handling is central to creating interactive GUI applications. In PyQt, events, such as button clicks, mouse
+movements, or key presses, are managed using a powerful mechanism called **signals and slots**. This system allows 
+you to respond to user actions in a clean and decoupled way[1][4][5].
 
 - **Signal:** An event notification emitted by a widget (e.g., a button emits a signal when clicked).
 - **Slot:** A Python function or method that is called in response to a signal.
@@ -14,7 +14,12 @@ event-driven programming in PyQt[1][4][5].
 
 In Qt (and therefore PyQt), most user actions (events) are implemented as signals.
 Widgets emit signals when something happens (like a button being clicked), and you connect these signals to slots
-(functions) to define what should happen in response[1][4][5].
+(functions) to define what should happen in response[1][4][5]. 
+ 
+This is not exactly the same as the 
+*Observer-Observable* pattern, but *signals and slots* play a similar role. In a sense, widgets are  
+_observables_, and slots are _observers_, and the signals are used by the observers (widgets) to contact (or execute) 
+the observables (slots).
 
 ## Example: Button Click Displays a Random Number
 
@@ -60,7 +65,7 @@ if __name__ == "__main__":
 
 ![button.png](button.png)
 
-**Key Points:**
+### Key Points
 
 - The `clicked` signal of the button is connected to the `show_random_number` method, which is called every time the
   button is pressed[4].
@@ -126,7 +131,7 @@ functions to make your application respond to user actions.
 ---------------
 
 ??? info "Use of AI"
-        Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-        explanations, examples and/or structure suggestions. All information has been verified, edited and completed by 
-        the author.
+    Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+    explanations, examples and/or structure suggestions. All information has been verified, edited, and completed by 
+    the author.
 
