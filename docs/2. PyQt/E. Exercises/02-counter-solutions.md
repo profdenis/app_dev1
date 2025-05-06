@@ -14,6 +14,8 @@ Each version below is named `counter1.py`, `counter2.py`, etc., with explanation
 
 ## **counter1.py – Basic Layout**
 
+![counter1.png](counter1.png)
+
 ```python
 import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
@@ -47,6 +49,8 @@ if __name__ == "__main__":
 ---
 
 ## **counter2.py – Basic Increment**
+
+![counter2.png](counter2.png)
 
 ```python
 import sys
@@ -88,6 +92,8 @@ if __name__ == "__main__":
 ---
 
 ## **counter3.py – Add Decrement and Step Control**
+
+![counter3.png](counter3.png)
 
 ```python
 import sys
@@ -152,6 +158,10 @@ if __name__ == "__main__":
 ---
 
 ## **counter4.py – Settings Window with Custom Signal**
+
+![counter4a.png](counter4a.png)
+
+![counter4b.png](counter4b.png)
 
 ```python
 import sys
@@ -238,6 +248,10 @@ if __name__ == "__main__":
 ---
 
 ## **counter5.py – Reset Feature via Settings Window**
+
+![counter5a.png](counter5a.png)
+
+![counter5b.png](counter5b.png)
 
 ```python
 import sys
@@ -333,6 +347,135 @@ if __name__ == "__main__":
 - Main window resets counter and step size when reset is requested.
 
 ---
+
+
+## **counter6.py - Multi-Counter System**
+
+![counter6a.png](counter6a.png)
+
+![counter6b.png](counter6b.png)
+
+```python
+import sys
+from PyQt6.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QLabel, QPushButton,
+    QSpinBox, QHBoxLayout
+)
+from PyQt6.QtCore import pyqtSignal
+
+
+class SettingsWindow(QWidget):
+    step_changed = pyqtSignal(int)
+    reset_requested = pyqtSignal()
+
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Settings")
+        layout = QVBoxLayout()
+        self.step_control = QSpinBox()
+        self.step_control.setValue(1)
+        layout.addWidget(QLabel("Global Step Size:"))
+        layout.addWidget(self.step_control)
+
+        self.reset_btn = QPushButton("Reset Counter")
+        layout.addWidget(self.reset_btn)
+        self.setLayout(layout)
+        self.resize(150, 120)
+
+        self.step_control.valueChanged.connect(
+            lambda value: self.step_changed.emit(value)
+        )
+        self.reset_btn.clicked.connect(self.reset_requested.emit)
+
+
+class CounterApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Counter v5")
+        self.counter = 0
+
+        self.layout = QVBoxLayout()
+        self.display = QLabel("0")
+        self.inc_btn = QPushButton("+")
+        self.dec_btn = QPushButton("-")
+        self.step_input = QSpinBox()
+        self.step_input.setValue(1)
+
+        btn_layout = QHBoxLayout()
+        btn_layout.addWidget(self.dec_btn)
+        btn_layout.addWidget(self.inc_btn)
+
+        self.layout.addWidget(self.display)
+        self.layout.addLayout(btn_layout)
+        self.layout.addWidget(QLabel("Step size:"))
+        self.layout.addWidget(self.step_input)
+
+        self.settings_btn = QPushButton("⚙ Settings")
+        self.layout.addWidget(self.settings_btn)
+        self.setLayout(self.layout)
+        self.resize(220, 210)
+
+        self.inc_btn.clicked.connect(self.increment)
+        self.dec_btn.clicked.connect(self.decrement)
+
+        # Settings window
+        self.settings_window = SettingsWindow()
+        self.settings_btn.clicked.connect(self.settings_window.show)
+        self.settings_window.step_changed.connect(self.step_input.setValue)
+        self.settings_window.reset_requested.connect(self.reset_counter)
+
+    def increment(self):
+        self.counter += self.step_input.value()
+        self.display.setText(str(self.counter))
+
+    def decrement(self):
+        self.counter -= self.step_input.value()
+        self.display.setText(str(self.counter))
+
+    def reset_counter(self):
+        self.counter = 0
+        self.display.setText("0")
+        self.step_input.setValue(1)  # probably not necessary
+
+    def closeEvent(self, event):
+        self.settings_window.close()
+        event.accept()
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = CounterApp()
+    window.show()
+    sys.exit(app.exec())
+
+```
+
+**Key Changes/Additions:**  
+
+1. **Reusable `CounterWidget`:**  
+    - Encapsulates all counter functionality in a self-contained widget
+    - Can be instantiated multiple times
+    - Has built-in reset capability
+
+2. **Bulk Signal Connections:**  
+    - Settings window's `step_changed` updates all counters' step inputs
+    - `reset_requested` triggers resets on all counters
+    - Uses list comprehensions to apply changes to all instances
+
+3. **Visual Separation:**
+    - Uses `QFrame` with styled panel for visual distinction
+    - Vertical layout stacks multiple counters
+
+4. **Close Event:**
+    - Redefined the `closeEvent()` method in the `CounterApp` class to close the settings window at the same time as 
+      close the main window
+   
+    ```python
+    def closeEvent(self, event):
+        self.settings_window.close()
+        event.accept()
+    ```
+
 
 
 ??? note "References"

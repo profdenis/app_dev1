@@ -49,6 +49,18 @@
 
 ---
 
+  
+## **Part 6: Reusable Widgets & Mass Signal Connections**
+
+**Task:** Create 3 independent counters that all respond to global settings  
+**Objectives:**  
+1. Create reusable `CounterWidget` class with self-contained functionality  
+2. Demonstrate multiple widgets connecting to same signals  
+3. Centralized control through shared settings  
+
+---
+
+
 **Bonus Challenge:**
 
 - Add any additional features you can think of, such as changing the color scheme from the settings window, or
@@ -63,6 +75,7 @@ each step to ensure everything works as expected. Focus on organizing your code 
 effectively.
 - Keep your different versions in different files, for example in the files named `counter1.py`, `counter2.py`,
 `counter3.py`, ...
+
 
 ---------------
 
