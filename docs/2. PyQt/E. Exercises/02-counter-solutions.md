@@ -4,7 +4,8 @@ Here's a complete solution series with explanations for each part of the counter
 
 Here are the solutions for each exercise, rewritten for **PyQt6**. Key PyQt6 differences include:
 
-- Enums (like alignment or check state) must use their fully qualified names (e.g., `Qt.AlignmentFlag.AlignCenter` instead of `Qt.AlignCenter`)[1][2][5].
+- Enums (like alignment or check state) must use their fully qualified names (e.g., `Qt.AlignmentFlag.AlignCenter` 
+- instead of `Qt.AlignCenter`)[1][2][5].
 - The `exec_()` method is now just `exec()`[3].
 - Some imports may change slightly.
 

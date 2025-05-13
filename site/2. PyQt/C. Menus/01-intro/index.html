@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/D.%20Background%20Tasks/01-responsive/">
+        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/C.%20Menus/01-intro/">
       
       
-        <link rel="prev" href="../../C.%20Architecture/01-overview/">
+        <link rel="prev" href="../../B.%20Signals/04-form/">
       
       
-        <link rel="next" href="../../E.%20Exercises/01-counter/">
+        <link rel="next" href="../02-editor/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>1. Responsive - Application Development 1</title>
+        <title>1. Menus - Application Development 1</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-responsive" class="md-skip">
+        <a href="#1-menus" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Responsive
+              1. Menus
             
           </span>
         </div>
@@ -1175,8 +1175,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1189,32 +1191,133 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    C. Architecture
+    C. Menus
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-            C. Architecture
+            C. Menus
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Menus
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Menus
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Menus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breaking-down-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking Down the Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breaking Down the Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-creation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu Creation Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts-about-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts About Menus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -1223,11 +1326,95 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C.%20Architecture/01-overview/" class="md-nav__link">
+      <a href="../02-editor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1. Overview
+    2. Simple text editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Text editor: settings menu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Text editor: Toolbar and Mouse Wheel Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Text editor: Document State Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Text editor: Keyboard Shortcut Integration
   </span>
   
 
@@ -1249,8 +1436,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1265,28 +1450,30 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    D. Background Tasks
+    D. Architecture
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
-            D. Background Tasks
+            D. Architecture
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1294,19 +1481,31 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
+    <li class="md-nav__item">
+      <a href="../../D.%20Architecture/01-overview/" class="md-nav__link">
         
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+  
+  <span class="md-ellipsis">
+    1. Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D.%20Architecture/01-responsive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,7 +1514,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1784,6 +1982,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Menus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breaking-down-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking Down the Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breaking Down the Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-creation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu Creation Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts-about-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts About Menus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1800,7 +2048,121 @@
   
 
 
-<h1 id="1-responsive">1. Responsive<a class="headerlink" href="#1-responsive" title="Permanent link">&para;</a></h1>
+<h1 id="1-menus">1. Menus<a class="headerlink" href="#1-menus" title="Permanent link">&para;</a></h1>
+<h2 id="introduction-to-menus">Introduction to Menus<a class="headerlink" href="#introduction-to-menus" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QMainWindow</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtGui</span><span class="w"> </span><span class="kn">import</span> <span class="n">QAction</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">SimpleMenuApp</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">init_ui</span><span class="p">()</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">init_ui</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;Simple Menu App&#39;</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="c1"># Create a menu bar</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="n">menubar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menuBar</span><span class="p">()</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="c1"># Add File menu</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="n">file_menu</span> <span class="o">=</span> <span class="n">menubar</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s1">&#39;File&#39;</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="c1"># Add Quit action</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="n">quit_action</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="s1">&#39;Quit&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="n">quit_action</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">)</span>  <span class="c1"># Close the app when triggered</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="n">file_menu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">quit_action</span><span class="p">)</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="n">ex</span> <span class="o">=</span> <span class="n">SimpleMenuApp</span><span class="p">()</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="n">ex</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+</span></code></pre></div>
+<p>In this example, we&rsquo;re creating a simple PyQt6 application that demonstrates how to add a menu bar to your GUI
+application. Menus are an essential part of most desktop applications, providing a way to organize commands and features
+in a hierarchical structure.</p>
+<h2 id="breaking-down-the-code">Breaking Down the Code<a class="headerlink" href="#breaking-down-the-code" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s analyze this example step by step, focusing on the menu implementation:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QMainWindow</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtGui</span><span class="w"> </span><span class="kn">import</span> <span class="n">QAction</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span></code></pre></div>
+<p>First, we import the necessary classes:</p>
+<ul>
+<li><code>QMainWindow</code>: This is the main window class that provides a framework for building an application&rsquo;s UI with menus,
+  toolbars, etc.</li>
+<li><code>QAction</code>: This class provides an abstract user interface action that can be inserted into menus and toolbars.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">SimpleMenuApp</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">init_ui</span><span class="p">()</span>
+</span></code></pre></div>
+<p>We create a class that inherits from <code>QMainWindow</code>, which automatically gives us the ability to add menus, toolbars, and
+status bars.</p>
+<h3 id="menu-creation-process">Menu Creation Process<a class="headerlink" href="#menu-creation-process" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">init_ui</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;Simple Menu App&#39;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="c1"># Create a menu bar</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">menubar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menuBar</span><span class="p">()</span>
+</span></code></pre></div>
+<p>The <code>menuBar()</code> method returns the menu bar for the main window. If the menu bar doesn&rsquo;t exist yet, a new one is
+created. This is your first step in creating menus.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>    <span class="c1"># Add File menu</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">file_menu</span> <span class="o">=</span> <span class="n">menubar</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s1">&#39;File&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The <code>addMenu()</code> method creates a new menu in the menu bar with the title &lsquo;File&rsquo;. This returns a <code>QMenu</code> object that we
+can add actions to.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>    <span class="c1"># Add Quit action</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">quit_action</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="s1">&#39;Quit&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">quit_action</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">)</span>  <span class="c1"># Close the app when triggered</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">file_menu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">quit_action</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Here&rsquo;s where we create a menu item:</p>
+<ol type="1">
+<li>We create a <code>QAction</code> with the text &lsquo;Quit&rsquo;</li>
+<li>We connect its <code>triggered</code> signal to the <code>close()</code> method of our window</li>
+<li>We add this action to our File menu using <code>addAction()</code></li>
+</ol>
+<p>When a user clicks on &ldquo;File&rdquo; in the menu bar, a dropdown will appear with &ldquo;Quit&rdquo; as an option. Clicking &ldquo;Quit&rdquo; will
+trigger the action, which will call <code>self.close()</code> to close the application.</p>
+<h2 id="key-concepts-about-menus">Key Concepts About Menus<a class="headerlink" href="#key-concepts-about-menus" title="Permanent link">&para;</a></h2>
+<ol type="1">
+<li>
+<p><strong>Menu Hierarchy</strong>: Menus in PyQt6 follow a hierarchy:</p>
+<ul>
+<li>Menu Bar (top level)</li>
+<li>Menus (like File, Edit, View)</li>
+<li>Actions (the actual commands users can select)</li>
+</ul>
+</li>
+<li>
+<p><strong>QAction</strong>: This class represents an item that a user can select from a menu. Actions can:</p>
+<ul>
+<li>Display text and/or an icon</li>
+<li>Have a shortcut key</li>
+<li>Show status tips</li>
+<li>Trigger a signal when activated</li>
+</ul>
+</li>
+<li>
+<p><strong>Signal-Slot Connection</strong>: The line <code>quit_action.triggered.connect(self.close)</code> demonstrates PyQt&rsquo;s signal-slot
+   mechanism. When the action is triggered (clicked), it emits a signal that is connected to the <code>close()</code> slot.</p>
+</li>
+</ol>
+<hr />
+<details class="info">
+<summary>Use of AI</summary>
+<p>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+explanations, examples and/or structure suggestions. All information has been verified, edited and completed by
+the author.</p>
+</details>
 
 
 
@@ -1836,7 +2198,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../C.%20Architecture/01-overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Overview">
+          <a href="../../B.%20Signals/04-form/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Submitting form data">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1846,20 +2208,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                1. Overview
+                4. Submitting form data
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../E.%20Exercises/01-counter/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Counter Application">
+          <a href="../02-editor/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Simple text editor">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1. Counter Application
+                2. Simple text editor
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -1,8 +1,8 @@
-# 5. Menus
+# 1. Menus
 
 ## Introduction to Menus
 
-````python
+```python
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtGui import QAction
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     ex = SimpleMenuApp()
     ex.show()
     sys.exit(app.exec())
-````
+```
 
 In this example, we're creating a simple PyQt6 application that demonstrates how to add a menu bar to your GUI
 application. Menus are an essential part of most desktop applications, providing a way to organize commands and features
@@ -121,3 +121,9 @@ trigger the action, which will call `self.close()` to close the application.
    mechanism. When the action is triggered (clicked), it emits a signal that is connected to the `close()` slot.
 
 
+---------------
+
+??? info "Use of AI"
+    Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+    explanations, examples and/or structure suggestions. All information has been verified, edited and completed by
+    the author.
