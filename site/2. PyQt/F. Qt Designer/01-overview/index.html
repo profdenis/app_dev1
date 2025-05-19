@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/A.%20Introduction/03-widgets/">
+        <link rel="canonical" href="https://profdenis.github.io/app_dev1/2.%20PyQt/F.%20Qt%20Designer/01-overview/">
       
       
-        <link rel="prev" href="../02-layouts/">
+        <link rel="prev" href="../../E.%20Architecture/02-mvc/">
       
       
-        <link rel="next" href="../04-box-layouts-examples/">
+        <link rel="next" href="../02-simple-example/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>3. Widgets Overview - Application Development 1</title>
+        <title>1. Overview - Application Development 1</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#3-widgets-overview" class="md-skip">
+        <a href="#1-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3. Widgets Overview
+              1. Overview
             
           </span>
         </div>
@@ -276,7 +276,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../01-hello-world/" class="md-tabs__link">
+        <a href="../../A.%20Introduction/01-hello-world/" class="md-tabs__link">
           
   
   2. PyQt
@@ -859,8 +859,6 @@
                 
   
   
-    
-  
   
   
     
@@ -875,11 +873,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -893,7 +893,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             A. Introduction
@@ -907,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-hello-world/" class="md-nav__link">
+      <a href="../../A.%20Introduction/01-hello-world/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-layouts/" class="md-nav__link">
+      <a href="../../A.%20Introduction/02-layouts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,30 +946,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    3. Widgets Overview
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../A.%20Introduction/03-widgets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,179 +958,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-qlabel" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. QLabel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-qpushbutton" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. QPushButton
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-qlineedit" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. QLineEdit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-qtextedit" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. QTextEdit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-qcheckbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. QCheckBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-qradiobutton" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. QRadioButton
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-qcombobox" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. QComboBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-qlistwidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. QListWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-qslider" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. QSlider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-qprogressbar" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. QProgressBar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-qspinbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      11. QSpinBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-qdial" class="md-nav__link">
-    <span class="md-ellipsis">
-      12. QDial
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-qtabwidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      13. QTabWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-qtablewidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      14. QTableWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-qtreewidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      15. QTreeWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary Table
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-widgets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Widgets
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1163,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-box-layouts-examples/" class="md-nav__link">
+      <a href="../../A.%20Introduction/04-box-layouts-examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-grid-layout-example/" class="md-nav__link">
+      <a href="../../A.%20Introduction/05-grid-layout-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1205,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-form/" class="md-nav__link">
+      <a href="../../A.%20Introduction/06-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1737,8 +1544,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1751,13 +1560,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
@@ -1771,7 +1578,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             F. Qt Designer
@@ -1782,10 +1589,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../F.%20Qt%20Designer/01-overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1794,6 +1621,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-to-qt-designer-best-tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction to Qt Designer: Best Tutorials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-using-qt-designer-interfaces-in-pyqt6-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Using Qt Designer Interfaces in PyQt6 Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using Qt Designer Interfaces in PyQt6 Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-load-the-ui-file-directly-at-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Load the .ui File Directly at Runtime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-convert-the-ui-file-to-python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Convert the .ui File to Python Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1806,7 +1695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../F.%20Qt%20Designer/02-simple-example/" class="md-nav__link">
+      <a href="../02-simple-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2290,155 +2179,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-qlabel" class="md-nav__link">
+  <a href="#1-introduction-to-qt-designer-best-tutorials" class="md-nav__link">
     <span class="md-ellipsis">
-      1. QLabel
+      1. Introduction to Qt Designer: Best Tutorials
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-qpushbutton" class="md-nav__link">
+  <a href="#2-using-qt-designer-interfaces-in-pyqt6-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      2. QPushButton
+      2. Using Qt Designer Interfaces in PyQt6 Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using Qt Designer Interfaces in PyQt6 Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-load-the-ui-file-directly-at-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Load the .ui File Directly at Runtime
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-qlineedit" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#b-convert-the-ui-file-to-python-code" class="md-nav__link">
     <span class="md-ellipsis">
-      3. QLineEdit
+      B. Convert the .ui File to Python Code
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-qtextedit" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. QTextEdit
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-qcheckbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. QCheckBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-qradiobutton" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. QRadioButton
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-qcombobox" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. QComboBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-qlistwidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. QListWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-qslider" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. QSlider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-qprogressbar" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. QProgressBar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-qspinbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      11. QSpinBox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-qdial" class="md-nav__link">
-    <span class="md-ellipsis">
-      12. QDial
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-qtabwidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      13. QTabWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-qtablewidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      14. QTableWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-qtreewidget" class="md-nav__link">
-    <span class="md-ellipsis">
-      15. QTreeWidget
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary Table
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-widgets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Widgets
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2460,184 +2238,149 @@
   
 
 
-<h1 id="3-widgets-overview">3. Widgets Overview<a class="headerlink" href="#3-widgets-overview" title="Permanent link">&para;</a></h1>
-<p>PyQt6 offers a wide range of widgets to build interactive and user-friendly GUI applications. Here are some of the most
-commonly used widgets:</p>
-<h3 id="1-qlabel">1. QLabel<a class="headerlink" href="#1-qlabel" title="Permanent link">&para;</a></h3>
+<h1 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h1>
+<p>Here’s a step-by-step guide to get you started with Qt Designer and then use your designed interface in a PyQt6
+application.</p>
+<h2 id="1-introduction-to-qt-designer-best-tutorials"><strong>1. Introduction to Qt Designer: Best Tutorials</strong><a class="headerlink" href="#1-introduction-to-qt-designer-best-tutorials" title="Permanent link">&para;</a></h2>
+<p><strong>Text Tutorials:</strong></p>
 <ul>
-<li>Displays text or images.</li>
-<li>Often used for labels, instructions, or displaying information.</li>
+<li>The official <a href="https://doc.qt.io/qt-6/designer-quick-start.html">Qt documentation</a> provides a concise and clear quick
+  start guide to Qt Designer, outlining the main steps:
+  choosing your form, placing widgets, arranging them in layouts, connecting signals and slots, and previewing the form.
+  This is a great place to get oriented with the tool’s interface and workflow[1].</li>
+<li>The Python GUIs website offers a beginner-friendly tutorial specifically for PyQt6, guiding you through installing Qt
+  Designer, launching it, and creating a simple UI using the drag-and-drop
+  editor[<a href="https://www.pythonguis.com/tutorials/pyqt6-first-steps-qt-designer/">4</a>][<a href="https://www.pythontutorial.net/pyqt/qt-designer/">13</a>].
+  It also explains the difference between saving <code>.ui</code> files and converting them to Python code.</li>
+<li>Real Python has a comprehensive step-by-step guide to using Qt Designer with Python, covering the basics and practical
+  tips for efficient GUI design[8].</li>
 </ul>
-<h3 id="2-qpushbutton">2. QPushButton<a class="headerlink" href="#2-qpushbutton" title="Permanent link">&para;</a></h3>
+<p><strong>Video Tutorials:</strong></p>
 <ul>
-<li>A clickable button.</li>
-<li>Used to trigger actions or events.</li>
+<li><a href="https://www.youtube.com/watch?v=K1GJqHPd3Lk">QtDesigner QuickStart (YouTube)</a>: A short, focused video that
+  demonstrates creating your first <code>.ui</code> file and explains the basics of the Qt Designer interface[2].</li>
+<li><a href="https://www.youtube.com/watch?v=2EjrLpC4cE4">Everything about using Qt Designer! | PyQt6 Tutorial Part 4 (YouTube)</a>:
+  This video covers installation, creating layouts, adding widgets, and converting <code>.ui</code> files for use in PyQt6. It’s
+  especially helpful for students using Python 3.10+ or those needing help with installation quirks[7].</li>
+<li><a href="https://www.youtube.com/watch?v=4HgIAZyrqgU">Download and create an app using Qt Designer (YouTube)</a>: A practical
+  walkthrough on downloading, installing, and starting your first project with Qt Designer for PyQt6[9].</li>
 </ul>
-<h3 id="3-qlineedit">3. QLineEdit<a class="headerlink" href="#3-qlineedit" title="Permanent link">&para;</a></h3>
+<h2 id="2-using-qt-designer-interfaces-in-pyqt6-applications"><strong>2. Using Qt Designer Interfaces in PyQt6 Applications</strong><a class="headerlink" href="#2-using-qt-designer-interfaces-in-pyqt6-applications" title="Permanent link">&para;</a></h2>
+<p>Once you’ve designed your UI and saved it as a <code>.ui</code> file, you have two main options to use it in your PyQt6
+application:</p>
+<h3 id="a-load-the-ui-file-directly-at-runtime"><strong>A. Load the <code>.ui</code> File Directly at Runtime</strong><a class="headerlink" href="#a-load-the-ui-file-directly-at-runtime" title="Permanent link">&para;</a></h3>
+<p>This is the quickest way to get started. You use the <code>uic</code> module from PyQt6 to load the <code>.ui</code> file:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6</span><span class="w"> </span><span class="kn">import</span> <span class="n">QtWidgets</span><span class="p">,</span> <span class="n">uic</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">app</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">window</span> <span class="o">=</span> <span class="n">uic</span><span class="o">.</span><span class="n">loadUi</span><span class="p">(</span><span class="s2">&quot;your_form.ui&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span>
+</span></code></pre></div>
+<p>This method is great for prototyping, but you can’t easily subclass or add custom logic in the constructor[4][11].</p>
+<h3 id="b-convert-the-ui-file-to-python-code"><strong>B. Convert the <code>.ui</code> File to Python Code</strong><a class="headerlink" href="#b-convert-the-ui-file-to-python-code" title="Permanent link">&para;</a></h3>
+<p>For more complex applications, convert the <code>.ui</code> file to a Python module using the <code>pyuic6</code> tool:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pyuic6<span class="w"> </span>-o<span class="w"> </span>your_form.py<span class="w"> </span>your_form.ui
+</span></code></pre></div>
+<p>Then, you can subclass and add your logic:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PyQt6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QMainWindow</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">your_form</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ui_MainWindow</span>  <span class="c1"># This class is generated by pyuic6</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">MainWindow</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span> <span class="o">=</span> <span class="n">Ui_MainWindow</span><span class="p">()</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="c1"># Add your custom logic here</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">window</span> <span class="o">=</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">()</span>
+</span></code></pre></div>
+<p>This approach lets you keep your UI and logic separate and is recommended for most real applications[4][7][13].</p>
+<p><strong>Further Reading and Examples:</strong></p>
 <ul>
-<li>Single-line text input field.</li>
-<li>Used for user input such as names, passwords, or search queries.</li>
-</ul>
-<h3 id="4-qtextedit">4. QTextEdit<a class="headerlink" href="#4-qtextedit" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Multi-line text input and display.</li>
-<li>Suitable for larger text input or rich text display.</li>
-</ul>
-<h3 id="5-qcheckbox">5. QCheckBox<a class="headerlink" href="#5-qcheckbox" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A box that can be checked or unchecked.</li>
-<li>Used for binary options or toggles.</li>
-</ul>
-<h3 id="6-qradiobutton">6. QRadioButton<a class="headerlink" href="#6-qradiobutton" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A button in a group where only one can be selected.</li>
-<li>Used for mutually exclusive options.</li>
-</ul>
-<h3 id="7-qcombobox">7. QComboBox<a class="headerlink" href="#7-qcombobox" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A drop-down list.</li>
-<li>Allows selection from multiple options.</li>
-</ul>
-<h3 id="8-qlistwidget">8. QListWidget<a class="headerlink" href="#8-qlistwidget" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Displays a list of items.</li>
-<li>Supports selection and interaction with list elements.</li>
-</ul>
-<h3 id="9-qslider">9. QSlider<a class="headerlink" href="#9-qslider" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A slider control for selecting a value from a range.</li>
-<li>Useful for volume control, brightness, or other continuous values.</li>
-</ul>
-<h3 id="10-qprogressbar">10. QProgressBar<a class="headerlink" href="#10-qprogressbar" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Displays progress of a task.</li>
-<li>Useful for showing completion status.</li>
-</ul>
-<h3 id="11-qspinbox">11. QSpinBox<a class="headerlink" href="#11-qspinbox" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A numeric input with up/down arrows.</li>
-<li>Used for integer input within a range.</li>
-</ul>
-<h3 id="12-qdial">12. QDial<a class="headerlink" href="#12-qdial" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A round dial control.</li>
-<li>Alternative to sliders for selecting values.</li>
-</ul>
-<h3 id="13-qtabwidget">13. QTabWidget<a class="headerlink" href="#13-qtabwidget" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Provides tabbed navigation.</li>
-<li>Useful for organizing content in tabs.</li>
-</ul>
-<h3 id="14-qtablewidget">14. QTableWidget<a class="headerlink" href="#14-qtablewidget" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Displays data in a table format.</li>
-<li>Supports editing, sorting, and selection.</li>
-</ul>
-<h3 id="15-qtreewidget">15. QTreeWidget<a class="headerlink" href="#15-qtreewidget" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Displays hierarchical data in a tree structure.</li>
-<li>Useful for file explorers or nested data.</li>
+<li>The Python GUIs tutorial walks through both approaches with code samples and explanations[4].</li>
+<li>The PyQt6 tutorial on PythonTutorial.net provides a detailed example of designing a login form in Qt Designer and then
+  using it in Python, both by loading the <code>.ui</code> file directly and by converting it to Python code[13].</li>
+<li>The YouTube video &ldquo;PyQt6 QtDesigner .ui files&rdquo; demonstrates both loading and converting <code>.ui</code> files in PyQt6[11].</li>
 </ul>
 <hr />
-<h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<p><strong>Summary Table:</strong></p>
 <table>
 <thead>
 <tr>
-<th>Widget</th>
-<th>Description</th>
-<th>Typical Use Case</th>
+<th>Step</th>
+<th>Resource Type</th>
+<th>Recommended Resource</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>QLabel</td>
-<td>Displays text or images</td>
-<td>Labels, instructions</td>
+<td>Introduction to Qt Designer</td>
+<td>Official Docs</td>
+<td>[Qt Designer Quick Start][1]</td>
 </tr>
 <tr>
-<td>QPushButton</td>
-<td>Clickable button</td>
-<td>Triggering actions</td>
+<td>Introduction to Qt Designer</td>
+<td>Video</td>
+<td>[QtDesigner QuickStart][2]</td>
 </tr>
 <tr>
-<td>QLineEdit</td>
-<td>Single-line text input</td>
-<td>User input fields</td>
+<td>Using <code>.ui</code> in PyQt6</td>
+<td>Tutorial</td>
+<td>[Python GUIs: PyQt6 and Qt Designer][4]</td>
 </tr>
 <tr>
-<td>QTextEdit</td>
-<td>Multi-line text input/display</td>
-<td>Larger text input or display</td>
-</tr>
-<tr>
-<td>QCheckBox</td>
-<td>Checkable box</td>
-<td>Binary options</td>
-</tr>
-<tr>
-<td>QRadioButton</td>
-<td>Exclusive selection button</td>
-<td>Mutually exclusive options</td>
-</tr>
-<tr>
-<td>QComboBox</td>
-<td>Drop-down list</td>
-<td>Selecting from options</td>
-</tr>
-<tr>
-<td>QListWidget</td>
-<td>List of items</td>
-<td>Item selection and interaction</td>
-</tr>
-<tr>
-<td>QSlider</td>
-<td>Slider control</td>
-<td>Selecting values continuously</td>
-</tr>
-<tr>
-<td>QProgressBar</td>
-<td>Progress indicator</td>
-<td>Task progress display</td>
-</tr>
-<tr>
-<td>QSpinBox</td>
-<td>Numeric input with arrows</td>
-<td>Integer input within range</td>
-</tr>
-<tr>
-<td>QDial</td>
-<td>Round dial control</td>
-<td>Alternative to sliders</td>
-</tr>
-<tr>
-<td>QTabWidget</td>
-<td>Tabbed navigation</td>
-<td>Organizing content in tabs</td>
-</tr>
-<tr>
-<td>QTableWidget</td>
-<td>Table display</td>
-<td>Data display and editing</td>
-</tr>
-<tr>
-<td>QTreeWidget</td>
-<td>Hierarchical tree display</td>
-<td>Nested data visualization</td>
+<td>Using <code>.ui</code> in PyQt6</td>
+<td>Video</td>
+<td>[PyQt6 QtDesigner .ui files][11]</td>
 </tr>
 </tbody>
 </table>
+<p>[1]: Official Qt Quick Start<br />
+[2]: YouTube QuickStart<br />
+[4]: Python GUIs PyQt6 Tutorial<br />
+[11]: YouTube: PyQt6 QtDesigner .ui files<br />
+[13]: PythonTutorial.net PyQt6 Designer</p>
 <hr />
-<h2 id="using-widgets">Using Widgets<a class="headerlink" href="#using-widgets" title="Permanent link">&para;</a></h2>
-<p>Widgets can be combined and arranged using layouts to create functional and visually appealing interfaces. Each widget
-has properties and signals that allow customization and interaction handling. This overview provides a foundation for
-exploring PyQt6 widgets and building GUI applications.</p>
-<hr />
-<details class="info">
-<summary>Use of AI</summary>
-<div class="language-text highlight"><pre><span></span><code>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
-explanations, examples and/or structure suggestions. All information has been verified, edited and completed by the
-author.
-</code></pre></div>
+<p><strong>Recommended learning path:</strong></p>
+<ol type="1">
+<li>Watch a short video or read the official quick start to get familiar with Qt Designer’s interface[1][2].</li>
+<li>Follow a beginner tutorial to create a simple UI (like a login form), save it as a <code>.ui</code> file, and preview it[4][13].</li>
+<li>Try both methods for using the UI in Python: loading the <code>.ui</code> file directly and converting it to Python
+   code[4][7][13].</li>
+<li>Explore more advanced examples as you get comfortable.</li>
+</ol>
+<p>Let me know if you want a specific step-by-step example or a custom sample project!</p>
+<details class="note">
+<summary>References</summary>
+<ul>
+<li>[1] https://doc.qt.io/qt-6/designer-quick-start.html</li>
+<li>[2] https://www.youtube.com/watch?v=K1GJqHPd3Lk</li>
+<li>[3] https://www.youtube.com/watch?v=ChH66To6PQM</li>
+<li>[4] https://www.pythonguis.com/tutorials/pyqt6-first-steps-qt-designer/</li>
+<li>[5] https://doc.qt.io/qtforpython-6/tutorials/basictutorial/uifiles.html</li>
+<li>[6] https://www.youtube.com/watch?v=FVpho_UiDAY</li>
+<li>[7] https://www.youtube.com/watch?v=2EjrLpC4cE4</li>
+<li>[8] https://realpython.com/qt-designer-python/</li>
+<li>[9] https://www.youtube.com/watch?v=4HgIAZyrqgU</li>
+<li>[10] https://www.youtube.com/watch?v=gkujFifiO3M</li>
+<li>[11] https://www.youtube.com/watch?v=SVIdMtXDEdc</li>
+<li>[12] https://www.pythonguis.com/tutorials/first-steps-qt-creator/</li>
+<li>[13] https://www.pythontutorial.net/pyqt/qt-designer/</li>
+<li>[14] https://www.youtube.com/watch?v=7HwGQQXuxnI</li>
+<li>[15] https://webhome.cs.uvic.ca/~blob/courses/305/html/qttutorial.html</li>
+<li>[16] https://www.youtube.com/watch?v=3gTh4_l40WI</li>
+<li>[17] https://stackoverflow.com/questions/66613380/downloading-qtdesigner-for-pyqt6-and-converting-ui-file-to-py-file-with-pyuic6</li>
+<li>[18] https://www.pythonguis.com/pyqt6-tutorial/</li>
+<li>[19] https://www.youtube.com/watch?v=4JIXfvELHGo</li>
+</ul>
 </details>
 
 
@@ -2674,7 +2417,7 @@ author.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../02-layouts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Layouts Overview">
+          <a href="../../E.%20Architecture/02-mvc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. List with MVC">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2684,20 +2427,20 @@ author.
                 Previous
               </span>
               <div class="md-ellipsis">
-                2. Layouts Overview
+                2. List with MVC
               </div>
             </div>
           </a>
         
         
           
-          <a href="../04-box-layouts-examples/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Box Layouts Examples">
+          <a href="../02-simple-example/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Simple example using Qt Designer">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                4. Box Layouts Examples
+                2. Simple example using Qt Designer
               </div>
             </div>
             <div class="md-footer__button md-icon">
