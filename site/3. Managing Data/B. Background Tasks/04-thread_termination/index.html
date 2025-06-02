@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/app_dev1/3.%20Managing%20Data/C.%20External%20Data%20Sources/01-overview/">
+        <link rel="canonical" href="https://profdenis.github.io/app_dev1/3.%20Managing%20Data/B.%20Background%20Tasks/04-thread_termination/">
       
       
-        <link rel="prev" href="../../B.%20Background%20Tasks/02-advanced/">
+        <link rel="prev" href="../03-table/">
       
       
-        <link rel="next" href="../../D.%20Graphics/01-overview/">
+        <link rel="next" href="../05-graduated-shutdown/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>1. Overview - Application Development 1</title>
+        <title>Force Thread Termination in PyQt6 - Application Development 1</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-overview" class="md-skip">
+        <a href="#force-thread-termination-in-pyqt6" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Overview
+              Force Thread Termination in PyQt6
             
           </span>
         </div>
@@ -1938,8 +1938,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1952,13 +1954,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
@@ -1972,7 +1972,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             B. Background Tasks
@@ -1986,7 +1986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../B.%20Background%20Tasks/01-overview/" class="md-nav__link">
+      <a href="../01-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2007,11 +2007,309 @@
   
   
     <li class="md-nav__item">
-      <a href="../../B.%20Background%20Tasks/02-advanced/" class="md-nav__link">
+      <a href="../02-advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Advanced Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example: CSV Loader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Force Thread Termination in PyQt6
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Force Thread Termination in PyQt6
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Important Warning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-to-force-thread-termination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to Force Thread Termination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to Force Thread Termination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-terminate-the-nuclear-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. terminate() - The Nuclear Option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-quit-wait-slightly-less-aggressive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. quit() + wait() - Slightly Less Aggressive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-timeout-force-pattern-recommended-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Timeout + Force Pattern (Recommended Approach)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-force-termination-might-be-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Force Termination Might Be Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Force Termination Might Be Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legitimate-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legitimate Use Cases:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#better-alternatives-to-force-termination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Alternatives to Force Termination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Better Alternatives to Force Termination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-design-for-cancellation-from-the-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Design for Cancellation from the Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-timeouts-in-network-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Use Timeouts in Network Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-process-large-tasks-in-chunks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Process Large Tasks in Chunks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prevention-is-better-than-cure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prevention is Better than Cure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-cancellation-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The Cancellation Contract
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-when-force-termination-is-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. When Force Termination is Acceptable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-when-force-termination-is-never-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. When Force Termination is NEVER Acceptable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-example-application-shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Example: Application Shutdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-graduated-shutdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graduated Shutdown
   </span>
   
 
@@ -2033,8 +2331,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2049,11 +2345,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
@@ -2067,7 +2365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             C. External Data Sources
@@ -2078,28 +2376,60 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../C.%20External%20Data%20Sources/01-db/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1. Overview
+    Database Connectivity
   </span>
   
 
       </a>
-      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C.%20External%20Data%20Sources/02-db-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DB interaction - Console Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C.%20External%20Data%20Sources/03-db-gui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DB interaction - PyQt6 Example
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2326,6 +2656,209 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Important Warning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-to-force-thread-termination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods to Force Thread Termination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods to Force Thread Termination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-terminate-the-nuclear-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. terminate() - The Nuclear Option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-quit-wait-slightly-less-aggressive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. quit() + wait() - Slightly Less Aggressive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-timeout-force-pattern-recommended-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Timeout + Force Pattern (Recommended Approach)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-force-termination-might-be-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Force Termination Might Be Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Force Termination Might Be Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legitimate-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legitimate Use Cases:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#better-alternatives-to-force-termination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Better Alternatives to Force Termination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Better Alternatives to Force Termination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-design-for-cancellation-from-the-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Design for Cancellation from the Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-timeouts-in-network-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Use Timeouts in Network Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-process-large-tasks-in-chunks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Process Large Tasks in Chunks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prevention-is-better-than-cure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prevention is Better than Cure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-cancellation-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The Cancellation Contract
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-when-force-termination-is-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. When Force Termination is Acceptable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-when-force-termination-is-never-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. When Force Termination is NEVER Acceptable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-example-application-shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Example: Application Shutdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2342,7 +2875,196 @@
   
 
 
-<h1 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h1>
+<h1 id="force-thread-termination-in-pyqt6">Force Thread Termination in PyQt6<a class="headerlink" href="#force-thread-termination-in-pyqt6" title="Permanent link">&para;</a></h1>
+<h2 id="important-warning">⚠️ Important Warning<a class="headerlink" href="#important-warning" title="Permanent link">&para;</a></h2>
+<p><strong>Force termination should be your LAST resort!</strong> It&rsquo;s dangerous and can cause serious problems. Always try cooperative
+cancellation first.</p>
+<h2 id="methods-to-force-thread-termination">Methods to Force Thread Termination<a class="headerlink" href="#methods-to-force-thread-termination" title="Permanent link">&para;</a></h2>
+<h3 id="1-terminate-the-nuclear-option">1. <code>terminate()</code> - The Nuclear Option<a class="headerlink" href="#1-terminate-the-nuclear-option" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">isRunning</span><span class="p">():</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>  <span class="c1"># Force kill the thread</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>  <span class="c1"># Wait for cleanup</span>
+</span></code></pre></div>
+<p><strong>What it does:</strong></p>
+<ul>
+<li>Immediately stops the thread execution</li>
+<li>No cleanup code runs</li>
+<li>Thread stops wherever it was in the code</li>
+</ul>
+<p><strong>Dangers:</strong></p>
+<ul>
+<li><strong>Data corruption</strong> - Files might be left half-written</li>
+<li><strong>Resource leaks</strong> - Open files, network connections left hanging</li>
+<li><strong>Deadlocks</strong> - Locked resources stay locked forever</li>
+<li><strong>Memory corruption</strong> - Variables left in inconsistent state</li>
+</ul>
+<h3 id="2-quit-wait-slightly-less-aggressive">2. <code>quit()</code> + <code>wait()</code> - Slightly Less Aggressive<a class="headerlink" href="#2-quit-wait-slightly-less-aggressive" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">isRunning</span><span class="p">():</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>  <span class="c1"># Request thread to quit</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>  <span class="c1"># Wait up to 5 seconds</span>
+</span></code></pre></div>
+<p><strong>What it does:</strong></p>
+<ul>
+<li>Sends a quit signal to the thread&rsquo;s event loop</li>
+<li>Thread can potentially do some cleanup</li>
+<li>More graceful than <code>terminate()</code></li>
+</ul>
+<p><strong>Still dangerous because:</strong></p>
+<ul>
+<li>Thread might ignore the quit signal</li>
+<li>If thread is stuck in a loop, quit won&rsquo;t work</li>
+<li>You might still need to use <code>terminate()</code> afterward</li>
+</ul>
+<h3 id="3-timeout-force-pattern-recommended-approach">3. Timeout + Force Pattern (Recommended Approach)<a class="headerlink" href="#3-timeout-force-pattern-recommended-approach" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">force_stop_thread</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Try graceful shutdown first, then force if necessary&quot;&quot;&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">isRunning</span><span class="p">():</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="k">return</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="c1"># Step 1: Try cooperative cancellation</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>  <span class="c1"># Set cancellation flag</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="c1"># Step 2: Wait briefly for cooperative shutdown</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>  <span class="c1"># Wait 2 seconds</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thread stopped cooperatively&quot;</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="k">return</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="c1"># Step 3: Try quit signal</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>  <span class="c1"># Wait 1 more second</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thread stopped after quit signal&quot;</span><span class="p">)</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="k">return</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="c1"># Step 4: Last resort - terminate</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ Force terminating unresponsive thread&quot;</span><span class="p">)</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>  <span class="c1"># Wait for termination to complete</span>
+</span></code></pre></div>
+<h2 id="when-force-termination-might-be-necessary">When Force Termination Might Be Necessary<a class="headerlink" href="#when-force-termination-might-be-necessary" title="Permanent link">&para;</a></h2>
+<h3 id="legitimate-use-cases">Legitimate Use Cases:<a class="headerlink" href="#legitimate-use-cases" title="Permanent link">&para;</a></h3>
+<ol type="1">
+<li><strong>Unresponsive third-party libraries</strong> - Code you can&rsquo;t modify that gets stuck</li>
+<li><strong>Network operations that hang</strong> - When timeouts don&rsquo;t work</li>
+<li><strong>Infinite loops in buggy code</strong> - During development/debugging</li>
+<li><strong>Application shutdown</strong> - User closes app while threads are running</li>
+</ol>
+<h3 id="example-scenarios">Example Scenarios:<a class="headerlink" href="#example-scenarios" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Stuck network operation</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># Should timeout...</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">except</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">pass</span>  <span class="c1"># ...but sometimes doesn&#39;t!</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Infinite loop (buggy code)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># Forgot to update loop condition</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">process_data</span><span class="p">()</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1"># Unresponsive library</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">some_library</span><span class="o">.</span><span class="n">blocking_operation</span><span class="p">()</span>  <span class="c1"># No way to cancel this</span>
+</span></code></pre></div>
+<h2 id="better-alternatives-to-force-termination">Better Alternatives to Force Termination<a class="headerlink" href="#better-alternatives-to-force-termination" title="Permanent link">&para;</a></h2>
+<h3 id="1-design-for-cancellation-from-the-start">1. Design for Cancellation from the Start<a class="headerlink" href="#1-design-for-cancellation-from-the-start" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">WellBehavedWorker</span><span class="p">(</span><span class="n">QThread</span><span class="p">):</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_cancelled</span><span class="p">:</span>  <span class="c1"># Check regularly!</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>                <span class="k">return</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>            <span class="c1"># Do work in small chunks</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">do_small_amount_of_work</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="2-use-timeouts-in-network-operations">2. Use Timeouts in Network Operations<a class="headerlink" href="#2-use-timeouts-in-network-operations" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">safe_network_call</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Always use timeouts!</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="k">return</span> <span class="n">response</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">Timeout</span><span class="p">:</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">log_message</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="s2">&quot;Network request timed out&quot;</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        <span class="k">return</span> <span class="kc">None</span>
+</span></code></pre></div>
+<h3 id="3-process-large-tasks-in-chunks">3. Process Large Tasks in Chunks<a class="headerlink" href="#3-process-large-tasks-in-chunks" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">process_large_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_cancelled</span><span class="p">:</span>  <span class="c1"># Check between chunks</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>                <span class="k">return</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>            <span class="n">chunk</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>  <span class="c1"># Process in small pieces</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">chunk</span><span class="p">:</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>                <span class="k">break</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">process_chunk</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="important-points">Important Points<a class="headerlink" href="#important-points" title="Permanent link">&para;</a></h2>
+<h3 id="1-prevention-is-better-than-cure">1. <strong>Prevention is Better than Cure</strong><a class="headerlink" href="#1-prevention-is-better-than-cure" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Always design threads to be cancellable</li>
+<li>Use timeouts for all network operations</li>
+<li>Process large tasks in small, interruptible chunks</li>
+</ul>
+<h3 id="2-the-cancellation-contract">2. <strong>The Cancellation Contract</strong><a class="headerlink" href="#2-the-cancellation-contract" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Good worker thread template</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">GoodWorker</span><span class="p">(</span><span class="n">QThread</span><span class="p">):</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">is_cancelled</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">cancel</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">is_cancelled</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">large_dataset</span><span class="p">:</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_cancelled</span><span class="p">:</span>  <span class="c1"># Honor the contract!</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>                <span class="k">return</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">process_item</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="3-when-force-termination-is-acceptable">3. <strong>When Force Termination is Acceptable</strong><a class="headerlink" href="#3-when-force-termination-is-acceptable" title="Permanent link">&para;</a></h3>
+<ul>
+<li>During application shutdown (user is quitting anyway)</li>
+<li>For debugging unresponsive code during development</li>
+<li>As absolute last resort when data integrity isn&rsquo;t critical</li>
+</ul>
+<h3 id="4-when-force-termination-is-never-acceptable">4. <strong>When Force Termination is NEVER Acceptable</strong><a class="headerlink" href="#4-when-force-termination-is-never-acceptable" title="Permanent link">&para;</a></h3>
+<ul>
+<li>When handling financial data</li>
+<li>When writing to databases</li>
+<li>When managing user files</li>
+<li>In production applications (unless specifically designed for it)</li>
+</ul>
+<h2 id="real-world-example-application-shutdown">Real-World Example: Application Shutdown<a class="headerlink" href="#real-world-example-application-shutdown" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle application shutdown&quot;&quot;&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">isRunning</span><span class="p">():</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        <span class="c1"># Try graceful shutdown first</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">3000</span><span class="p">):</span>  <span class="c1"># Wait 3 seconds</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>            <span class="c1"># Force terminate on app shutdown - this is acceptable</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">worker_thread</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="n">event</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+</span></code></pre></div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<ol type="1">
+<li><strong>Cooperative cancellation should be your default approach</strong></li>
+<li><strong>Force termination is dangerous but sometimes necessary</strong></li>
+<li><strong>Always try graceful methods first</strong></li>
+<li><strong>Use force termination only when you understand the risks</strong></li>
+<li><strong>Design your threads to be well-behaved from the start</strong></li>
+</ol>
+<p>Remember: A well-designed application should rarely need force termination!</p>
+<hr />
+<details class="info">
+<summary>Use of AI</summary>
+<p>Page written in part with the help of an AI assistant, mainly using Perplexity AI. The AI was used to generate
+explanations, examples and/or structure suggestions. All information has been verified, edited and completed by
+the author.</p>
+</details>
 
 
 
@@ -2378,7 +3100,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../B.%20Background%20Tasks/02-advanced/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Advanced Example">
+          <a href="../03-table/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Example: CSV Loader">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2388,20 +3110,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Advanced Example
+                Example: CSV Loader
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../D.%20Graphics/01-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Overview">
+          <a href="../05-graduated-shutdown/" class="md-footer__link md-footer__link--next" aria-label="Next: Graduated Shutdown">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1. Overview
+                Graduated Shutdown
               </div>
             </div>
             <div class="md-footer__button md-icon">
